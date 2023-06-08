@@ -8,6 +8,44 @@ const defaultAccepts = {
   audio: 'audio/mp3'
 }
 
+const mapPropsToState = (props) => {
+
+  let { accepts, externals } = props
+
+  accepts = {
+    ...defaultAccepts,
+    ...accepts
+  }
+
+  const fileAccept = !accepts ? [
+    defaultAccepts.image,
+    defaultAccepts.video,
+    defaultAccepts.audio
+  ].join(',') : [
+    accepts.image,
+    accepts.video,
+    accepts.audio
+  ].filter(item => item).join(',')
+
+  const external = {
+    url: '',
+    type: 
+      externals.image ? 'IMAGE' :
+      externals.audio ? 'AUDIO' :
+      externals.video ? 'VIDEO' :
+      externals.embed ? 'EMBED' : ''
+  }
+
+  return {
+    fileAccept: fileAccept,
+    external: external,
+    allowExternal: externals && (externals.image || externals.audio || externals.video || externals.embed),
+    propsStr:JSON.stringify(props)
+  }
+
+}
+
+
 export default class BraftFinderView extends React.Component {
 
   static defaultProps = {
@@ -49,48 +87,15 @@ export default class BraftFinderView extends React.Component {
 
   }
 
-  mapPropsToState (props) {
-
-    let { accepts, externals } = props
-
-    accepts = {
-      ...defaultAccepts,
-      ...accepts
-    }
-
-    const fileAccept = !accepts ? [
-      defaultAccepts.image,
-      defaultAccepts.video,
-      defaultAccepts.audio
-    ].join(',') : [
-      accepts.image,
-      accepts.video,
-      accepts.audio
-    ].filter(item => item).join(',')
-
-    const external = {
-      url: '',
-      type: 
-        externals.image ? 'IMAGE' :
-        externals.audio ? 'AUDIO' :
-        externals.video ? 'VIDEO' :
-        externals.embed ? 'EMBED' : ''
-    }
-
-    return {
-      fileAccept: fileAccept,
-      external: external,
-      allowExternal: externals && (externals.image || externals.audio || externals.video || externals.embed)
-    }
-
-  }
-
+  
   componentDidMount () {
-    this.setState(this.mapPropsToState(this.props))
+    this.setState(mapPropsToState(this.props))
   }
 
-  componentWillReceiveProps (nextProps) {
-    this.setState(this.mapPropsToState(nextProps))
+  static getDerivedStateFromProps(nextProps,prevState){
+    if(JSON.stringify(nextProps) !== prevState.propsStr)
+      return mapPropsToState(nextProps)
+    return null
   }
 
   componentWillUnmount () {

@@ -1,5 +1,5 @@
 var webpack = require('webpack')
-  , merge = require('webpack-merge')
+  , {merge} = require('webpack-merge')
   , path = require('path')
   , HtmlWebpackPlugin = require('html-webpack-plugin')
   , baseConfigs = require('./webpack.base')
@@ -20,8 +20,9 @@ module.exports = merge(baseConfigs, {
     })
   ],
   devServer: {
-    stats: { chunks:false },
-    contentBase: './example',
+    static: {
+      directory: path.join(__dirname, './example'),
+    },
     port: 5997,
     hot: true
   }

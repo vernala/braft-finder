@@ -7,604 +7,204 @@
 		var a = typeof exports === 'object' ? factory(require("react")) : factory(root["react"]);
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
-})(window, function(__WEBPACK_EXTERNAL_MODULE__2__) {
-return /******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// define __esModule on exports
-/******/ 	__webpack_require__.r = function(exports) {
-/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 		}
-/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 	};
-/******/
-/******/ 	// create a fake namespace object
-/******/ 	// mode & 1: value is a module id, require it
-/******/ 	// mode & 2: merge all properties of value into the ns
-/******/ 	// mode & 4: return value when already ns object
-/******/ 	// mode & 8|1: behave like require
-/******/ 	__webpack_require__.t = function(value, mode) {
-/******/ 		if(mode & 1) value = __webpack_require__(value);
-/******/ 		if(mode & 8) return value;
-/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
-/******/ 		var ns = Object.create(null);
-/******/ 		__webpack_require__.r(ns);
-/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
-/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
-/******/ 		return ns;
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
-/******/
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 21);
-/******/ })
-/************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+})(self, (__WEBPACK_EXTERNAL_MODULE__156__) => {
+return /******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ 468:
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(933);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(476);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(678);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
+// Imports
+
+
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(854), __webpack_require__.b);
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `@font-face{font-family:"bf-icons";src:url(${___CSS_LOADER_URL_REPLACEMENT_0___}) format("truetype");font-weight:normal;font-style:normal}.braft-finder [class^=braft-icon-],.braft-finder [class*=" braft-icon-"]{font-family:"bf-icons" !important;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.braft-finder .braft-icon-code:before{content:""}.braft-finder .braft-icon-pause:before{content:""}.braft-finder .braft-icon-play_arrow:before{content:""}.braft-finder .braft-icon-bin:before{content:""}.braft-finder .braft-icon-replay:before{content:""}.braft-finder .braft-icon-close:before{content:""}.braft-finder .braft-icon-music:before{content:""}.braft-finder .braft-icon-camera:before{content:""}.braft-finder .braft-icon-file-text:before{content:""}.braft-finder .braft-icon-film:before{content:""}.braft-finder .braft-icon-paste:before{content:""}.braft-finder .braft-icon-spinner:before{content:""}.braft-finder .braft-icon-media:before{content:""}.braft-finder .braft-icon-add:before{content:""}.braft-finder .braft-icon-done:before{content:""}.braft-finder .braft-icon-drop-down:before{content:""}.braft-finder .braft-icon-drop-up:before{content:""}.braft-finder .braft-icon-help:before{content:""}.braft-finder .braft-icon-info:before{content:""}.braft-finder .braft-icon-menu:before{content:""}.pull-left{float:left}.pull-right{float:right}.braft-finder .bf-uploader{position:relative;height:370px;margin:0}.braft-finder .bf-uploader.draging .bf-list-wrap,.braft-finder .bf-uploader.draging .bf-add-external{pointer-events:none}.braft-finder .bf-uploader input::-webkit-input-placeholder{color:#ccc}.braft-finder .bf-uploader input::-moz-placeholder{color:#ccc}.braft-finder .bf-uploader input::-ms-input-placeholder{color:#ccc}.braft-finder .bf-list-wrap{position:relative;height:370px}.braft-finder .bf-list-tools{z-index:1;position:absolute;top:0;right:0;left:0;height:20px;padding:0 15px;background-color:#fff}.braft-finder .bf-list-tools span{height:26px;font-size:12px;line-height:20px;cursor:pointer;user-select:none}.braft-finder .bf-list-tools span[disabled]{opacity:.3;pointer-events:none}.braft-finder .bf-list-tools .bf-select-all,.braft-finder .bf-list-tools .bf-deselect-all{float:left;margin-right:5px;color:#bbb}.braft-finder .bf-list-tools .bf-select-all:hover,.braft-finder .bf-list-tools .bf-deselect-all:hover{color:#3498db}.braft-finder .bf-list-tools .bf-remove-selected{float:right;color:#e74c3c}.braft-finder .bf-list-tools .bf-remove-selected:hover{color:COLOR_DANGER_HOVER}.braft-finder .bf-list{position:absolute;z-index:1;top:30px;right:0;left:0;bottom:0;margin:0;padding:0 10px;list-style:none;overflow:auto}.braft-finder .bf-list::-webkit-scrollbar{width:5px;height:5px;background-color:#fff}.braft-finder .bf-list::-webkit-scrollbar-track{background-color:#fff}.braft-finder .bf-list::-webkit-scrollbar-thumb{background-color:rgba(0,0,0,.1)}.braft-finder .bf-item,.braft-finder .bf-add-item{position:relative;display:block;float:left;width:113px;height:113px;margin:5px;overflow:hidden;border-radius:3px}.braft-finder .bf-item.uploading{pointer-events:none}.braft-finder .bf-item.error::before{display:block;content:""}.braft-finder .bf-item.error::after{position:absolute;z-index:1;top:0;right:0;bottom:0;left:0;background-color:rgba(231,76,60,.8);content:""}.braft-finder .bf-item.error:hover::after{background-color:rgba(231,76,60,.9)}.braft-finder .bf-item.error .bf-item-uploading{display:none}.braft-finder .bf-add-item{background-color:#ecedef;color:#999}.braft-finder .bf-add-item:hover{background-color:#e1e2e3}.braft-finder .bf-add-item i{display:block;width:113px;height:113px;font-size:48px;line-height:113px;text-align:center}.braft-finder .bf-add-item input{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;cursor:pointer}.braft-finder .bf-item::before{display:none;position:absolute;z-index:2;top:0;left:0;width:113px;height:113px;color:#fff;font-size:48px;font-family:"bf-icons";line-height:113px;text-align:center}.braft-finder .bf-item::after{position:absolute;z-index:1;top:0;right:0;bottom:0;left:0;background-color:rgba(52,152,219,0);content:""}.braft-finder .bf-item:hover::after{background-color:rgba(52,152,219,.3)}.braft-finder .bf-item:hover .bf-item-remove{display:block}.braft-finder .bf-item.active::before{display:block;content:""}.braft-finder .bf-item.active::after{background-color:rgba(52,152,219,.6)}.braft-finder .bf-item.active:hover::after{background-color:rgba(52,152,219,.8)}.braft-finder .bf-item.active:hover .bf-item-remove{display:none}.braft-finder .bf-item-uploading{box-sizing:border-box;position:absolute;z-index:3;top:52px;left:10px;width:93px;height:10px;overflow:hidden;background-color:rgba(255,255,255,.3);border-radius:5px;box-shadow:0 0 0 100px rgba(0,0,0,.5)}.braft-finder .bf-item-uploading-bar{height:10px;background-color:#3498db;border-radius:0}.braft-finder .bf-item-remove{display:none;position:absolute;z-index:2;top:0;right:0;width:28px;height:28px;color:#fff;font-size:18px;line-height:28px;text-align:center;cursor:pointer}.braft-finder .bf-item-remove:hover{color:#e74c3c}.braft-finder .bf-item-title{display:none;box-sizing:border-box;position:absolute;z-index:2;bottom:0;left:0;width:100%;height:40px;padding:0 5px;overflow:hidden;background-image:linear-gradient(rgba(0, 0, 0, 0), black);color:#fff;font-size:12px;line-height:55px;text-align:center;text-overflow:ellipsis;white-space:nowrap}.braft-finder .bf-image{width:100%;height:100%;background-color:#eee;user-select:none}.braft-finder .bf-image img{display:block;width:100%;height:100%;object-fit:cover}.braft-finder .bf-video{background-color:#8e44ad}.braft-finder .bf-audio{background-color:#f39c12}.braft-finder .bf-embed{background-color:#f1c40f}.braft-finder .bf-icon{display:block;width:113px;height:113px;overflow:hidden;color:#fff;text-align:center;text-decoration:none}.braft-finder .bf-icon i,.braft-finder .bf-icon span{display:block}.braft-finder .bf-icon i{margin-top:35px;font-size:24px}.braft-finder .bf-icon span{width:103px;margin:10px auto;overflow:hidden;font-size:12px;text-overflow:ellipsis;white-space:nowrap}.braft-finder .bf-drag-uploader{box-sizing:border-box;position:absolute;z-index:2;top:0;right:15px;left:15px;height:100%;background-color:#fff;border:dashed 1px #bbb;text-align:center;opacity:0;pointer-events:none}.braft-finder .bf-drag-uploader:hover,.braft-finder .bf-drag-uploader.draging{background-color:#f1f2f3}.braft-finder .bf-drag-uploader.active{opacity:1;pointer-events:auto}.braft-finder .bf-uploader-buttons{height:370px;margin:auto;text-align:center}.braft-finder .bf-drag-tip{display:inline-block;margin-top:150px;color:#ccc;text-align:center;font-size:28px;font-weight:normal;line-height:40px}.braft-finder .bf-drag-tip input{position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;opacity:0;color:#fff;text-indent:-100px;cursor:pointer}.braft-finder .bf-manager-footer{height:36px;margin:10px 0;padding:0 15px}.braft-finder .bf-manager-footer .button{float:right;height:36px;margin-left:5px;padding:0 35px;font-size:12px;font-weight:700;border:none;border-radius:3px;cursor:pointer}.braft-finder .bf-manager-footer .button-insert{color:#fff;background-color:#3498db}.braft-finder .bf-manager-footer .button-insert:hover{background-color:COLOR_ACTIVE_HOVER}.braft-finder .bf-manager-footer .button-insert[disabled]{opacity:.3;pointer-events:none;filter:grayscale(0.4)}.braft-finder .bf-manager-footer .button-cancel{color:#999;background-color:#e8e8e9}.braft-finder .bf-manager-footer .button-cancel:hover{background-color:#d8d8d9}.braft-finder .bf-toggle-external-form{color:#666;font-size:12px;line-height:36px}.braft-finder .bf-toggle-external-form span{color:#bbb;line-height:16px;cursor:pointer;user-select:none}.braft-finder .bf-toggle-external-form span:hover{color:#3498db}.braft-finder .bf-toggle-external-form span i{position:relative;top:2px;font-size:16px}.braft-finder .bf-add-external{position:absolute;z-index:3;top:0;right:0;bottom:0;left:0;background-color:#fff}.braft-finder .bf-add-external input{border:solid 1px rgba(0,0,0,.3);border:solid .5px rgba(0,0,0,.3);box-shadow:none}.braft-finder .bf-add-external input:focus{border-color:#3498db;box-shadow:none}.braft-finder .bf-external-form{width:500px;max-width:90%;margin:91px auto 0 auto}.braft-finder .bf-external-input{display:flex;position:relative;width:100%;height:40px;margin-bottom:10px}.braft-finder .bf-external-input div{flex:1;height:40px}.braft-finder .bf-external-input input,.braft-finder .bf-external-input textarea{display:block;box-sizing:border-box;width:100%;height:40px;padding:0 10px;border:none;border-radius:3px;outline:none;box-shadow:inset 0 0 0 1px rgba(0,0,0,.3);color:#999;font-size:18px}.braft-finder .bf-external-input input:focus,.braft-finder .bf-external-input textarea:focus{box-shadow:inset 0 0 0 1px #3498db}.braft-finder .bf-external-input textarea{height:100px;font-size:14px}.braft-finder .bf-external-input button{margin-left:5px;padding:0 15px;height:40px;background-color:#3498db;border:none;border-radius:3px;color:#fff;font-size:14px;font-weight:bold;cursor:pointer}.braft-finder .bf-external-input button:disabled{opacity:.3;pointer-events:none;filter:grayscale(0.4)}.braft-finder .bf-external-input button:hover{background-color:COLOR_ACTIVE_HOVER}.braft-finder .bf-switch-external-type{overflow:hidden;text-align:center}.braft-finder .bf-switch-external-type button{width:auto;height:30px;margin:10px 5px;padding:0 10px;background-color:#e8e9ea;border:none;border-radius:3px;color:#999;font-size:12px;cursor:pointer}.braft-finder .bf-switch-external-type button:hover{background-color:#d8d9da}.braft-finder .bf-switch-external-type button:only-child{display:none}.braft-finder .bf-switch-external-type[data-type=IMAGE] [data-type=IMAGE],.braft-finder .bf-switch-external-type[data-type=VIDEO] [data-type=VIDEO],.braft-finder .bf-switch-external-type[data-type=AUDIO] [data-type=AUDIO],.braft-finder .bf-switch-external-type[data-type=EMBED] [data-type=EMBED],.braft-finder .bf-switch-external-type[data-type=FILE] [data-type=FILE]{background-color:#3498db;color:#fff}.braft-finder .bf-external-tip{display:block;margin-top:15px;color:#ccc;font-size:12px;text-align:center}`, ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ 476:
+/***/ ((module) => {
 
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var compressImage = exports.compressImage = function compressImage(url) {
-  var width = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1280;
-  var height = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 800;
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+*/
+module.exports = function (cssWithMappingToString) {
+  var list = [];
 
-
-  return new Promise(function (resolve, reject) {
-
-    var image = new Image();
-
-    image.src = url;
-
-    image.onerror = function (error) {
-      reject(error);
-    };
-
-    image.onload = function () {
-
-      try {
-
-        var compressCanvas = document.createElement('canvas');
-        var scale = this.width > width || this.height > height ? this.width > this.height ? width / this.width : height / this.height : 1;
-
-        compressCanvas.width = this.width * scale;
-        compressCanvas.height = this.height * scale;
-
-        var canvasContext = compressCanvas.getContext('2d');
-        canvasContext.drawImage(this, 0, 0, compressCanvas.width, compressCanvas.height);
-
-        resolve({
-          url: compressCanvas.toDataURL('image/png', 1),
-          width: compressCanvas.width,
-          height: compressCanvas.height
-        });
-      } catch (error) {
-        reject(error);
+  // return the list of modules as css string
+  list.toString = function toString() {
+    return this.map(function (item) {
+      var content = "";
+      var needLayer = typeof item[5] !== "undefined";
+      if (item[4]) {
+        content += "@supports (".concat(item[4], ") {");
       }
-    };
-  });
+      if (item[2]) {
+        content += "@media ".concat(item[2], " {");
+      }
+      if (needLayer) {
+        content += "@layer".concat(item[5].length > 0 ? " ".concat(item[5]) : "", " {");
+      }
+      content += cssWithMappingToString(item);
+      if (needLayer) {
+        content += "}";
+      }
+      if (item[2]) {
+        content += "}";
+      }
+      if (item[4]) {
+        content += "}";
+      }
+      return content;
+    }).join("");
+  };
+
+  // import a list of modules into the list
+  list.i = function i(modules, media, dedupe, supports, layer) {
+    if (typeof modules === "string") {
+      modules = [[null, modules, undefined]];
+    }
+    var alreadyImportedModules = {};
+    if (dedupe) {
+      for (var k = 0; k < this.length; k++) {
+        var id = this[k][0];
+        if (id != null) {
+          alreadyImportedModules[id] = true;
+        }
+      }
+    }
+    for (var _k = 0; _k < modules.length; _k++) {
+      var item = [].concat(modules[_k]);
+      if (dedupe && alreadyImportedModules[item[0]]) {
+        continue;
+      }
+      if (typeof layer !== "undefined") {
+        if (typeof item[5] === "undefined") {
+          item[5] = layer;
+        } else {
+          item[1] = "@layer".concat(item[5].length > 0 ? " ".concat(item[5]) : "", " {").concat(item[1], "}");
+          item[5] = layer;
+        }
+      }
+      if (media) {
+        if (!item[2]) {
+          item[2] = media;
+        } else {
+          item[1] = "@media ".concat(item[2], " {").concat(item[1], "}");
+          item[2] = media;
+        }
+      }
+      if (supports) {
+        if (!item[4]) {
+          item[4] = "".concat(supports);
+        } else {
+          item[1] = "@supports (".concat(item[4], ") {").concat(item[1], "}");
+          item[4] = supports;
+        }
+      }
+      list.push(item);
+    }
+  };
+  return list;
 };
 
 /***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
+
+/***/ 678:
+/***/ ((module) => {
 
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var UniqueIndex = exports.UniqueIndex = function UniqueIndex() {
+module.exports = function (url, options) {
+  if (!options) {
+    options = {};
+  }
+  if (!url) {
+    return url;
+  }
+  url = String(url.__esModule ? url.default : url);
 
-  if (isNaN(window.__BRAFT_MM_UNIQUE_INDEX__)) {
-    window.__BRAFT_MM_UNIQUE_INDEX__ = 1;
-  } else {
-    window.__BRAFT_MM_UNIQUE_INDEX__ += 1;
+  // If url is already wrapped in quotes, remove them
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  }
+  if (options.hash) {
+    url += options.hash;
   }
 
-  return window.__BRAFT_MM_UNIQUE_INDEX__;
-};
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE__2__;
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = {
-    remove: 'Удалить',
-    cancel: 'Отмена',
-    confirm: 'Подтвердить',
-    insert: 'Вставить выбранные элементы',
-    width: 'Ширина',
-    height: 'Высота',
-    image: 'Изображение',
-    video: 'Видео',
-    audio: 'Аудио',
-    embed: 'Встроенное',
-    caption: 'Медиа библиотека',
-    dragTip: 'Нажмите или перетащите файлы сюда',
-    dropTip: 'Перетащите, чтобы загрузить',
-    selectAll: 'Выбрать все',
-    deselect: 'Отменить выбор',
-    removeSelected: 'Удалить выбранные элементы',
-    externalInputPlaceHolder: 'Имя источника |URL источника',
-    externalInputTip: 'Разделите имя источника и URL источника с помощью «|», подтвердите нажатием Enter.',
-    addLocalFile: 'Добавить с локального диска',
-    addExternalSource: 'Добавить через интернет',
-    unnamedItem: 'Беззымянный элемент',
-    confirmInsert: 'Вставить выбранные элементы'
-};
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = {
-  remove: 'Kaldır',
-  cancel: 'İptal',
-  confirm: 'Onayla',
-  insert: 'Seçilenleri ekle',
-  width: 'Genişlik',
-  height: 'Yükseklik',
-  image: 'Resim',
-  video: 'Görüntü',
-  audio: 'Ses',
-  embed: 'Nesne göm',
-  caption: 'Kitaplık',
-  dragTip: 'Tıkla ya da dosya sürükle',
-  dropTip: 'Yüklemek için sürükleyin',
-  selectAll: 'Tümünü seç',
-  deselect: 'Seçimi kaldır',
-  removeSelected: 'Seçilenleri kaldır',
-  externalInputPlaceHolder: 'Kaynak adı|Kaynak bağlantısı',
-  externalInputTip: 'Kaynak asını ve bağlantısını "|" ile ayırın ve Enter\' a basın.',
-  addLocalFile: 'Yerel\' den ekle',
-  addExternalSource: 'Harici kaynaktan ekle',
-  unnamedItem: 'Adlandırılmamış giriş',
-  confirmInsert: 'Seçilenleri ekle'
-};
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = {
-  remove: '削除する',
-  cancel: 'キャンセル',
-  confirm: '確認する',
-  insert: '選択したアイテムを挿入',
-  width: '幅',
-  height: '身長',
-  image: '絵',
-  video: 'ビデオ',
-  audio: '音声',
-  embed: '埋め込みメディア',
-  caption: 'メディアライブラリー',
-  dragTip: 'ファイルをこの位置までクリックまたはドラッグします',
-  dropTip: 'アップロードするマウスを放します',
-  selectAll: 'すべて選択',
-  deselect: '選択を解除',
-  removeSelected: '選択したアイテムを削除',
-  externalInputPlaceHolder: 'リソース名|リソースアドレス',
-  externalInputTip: 'リソース名とリソースアドレスは "|"で区切ります。',
-  addLocalFile: 'ローカルリソースを追加する',
-  addExternalSource: 'ネットワークリソースを追加する',
-  unnamedItem: '名前のないアイテム',
-  confirmInsert: '選択したアイテムを挿入'
-};
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = {
-  remove: '삭제',
-  cancel: '취소',
-  confirm: '확인',
-  insert: '선택한항목삽입',
-  width: '너비',
-  height: '높이',
-  image: '그림',
-  video: '비디오',
-  audio: '오디오',
-  embed: '임베디드미디어',
-  caption: '미디어라이브러리',
-  dragTip: '파일을 클릭하거나이 지점으로 드래그하십시오.',
-  dropTip: '업로드하려면마우스를놓으십시오.',
-  selectAll: '모두 선택',
-  deselect: '선택 취소',
-  removeSelected: '선택한 항목 삭제',
-  externalInputPlaceHolder: '리소스 이름 | 리소스 주소',
-  externalInputTip: '자원 이름과 자원 주소를 "|"',
-  addLocalFile: '로컬 리소스 추가',
-  addExternalSource: '네트워크 리소스 추가',
-  unnamedItem: '이름없는 항목',
-  confirmInsert: '선택한 항목 삽입'
-};
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = {
-  remove: 'Usuń',
-  cancel: 'Anuluj',
-  confirm: 'Potwierdź',
-  insert: 'Wstaw wybrane elementy',
-  width: 'Szerokość',
-  height: 'Wysokość',
-  image: 'Obraz',
-  video: 'Wideo',
-  audio: 'Dźwięk',
-  embed: 'Obiekt',
-  caption: 'Biblioteka mediów',
-  dragTip: 'Kliknij lub przenieś tu pliki',
-  dropTip: 'Upuść aby dodać plik',
-  selectAll: 'Zaznacz wszystko',
-  deselect: 'Odznacz',
-  removeSelected: 'Usuń wybrane',
-  externalInputPlaceHolder: 'Nazwa źródła|Adres URL',
-  externalInputTip: 'Oddziel nazwę i adres URL źródła z pomocą "|", Potwierdź Enter-em',
-  addLocalFile: 'Dodaj z komputera',
-  addExternalSource: 'Dodaj z Internetu',
-  unnamedItem: 'Bez nazwy',
-  confirmInsert: 'Dodaj wybrane elementy'
-};
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = {
-  remove: '刪除',
-  cancel: '取消',
-  confirm: '確認',
-  insert: '插入所選項目',
-  width: '寬度',
-  height: '高度',
-  image: '圖片',
-  video: '視頻',
-  audio: '音頻',
-  embed: '嵌入式媒體',
-  caption: '媒體庫',
-  dragTip: '點擊或拖動文件至此',
-  dropTip: '放開鼠標以上傳',
-  selectAll: '選擇全部',
-  deselect: '取消選擇',
-  removeSelected: '刪除選中項目',
-  externalInputPlaceHolder: '資源名稱|資源地址',
-  externalInputTip: '使用“|”分隔資源名稱和資源地址',
-  addLocalFile: '添加本地資源',
-  addExternalSource: '添加網絡資源',
-  unnamedItem: '未命名項目',
-  confirmInsert: '插入選中項目'
-};
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = {
-  remove: '删除',
-  cancel: '取消',
-  confirm: '确认',
-  insert: '插入所选项目',
-  width: '宽度',
-  height: '高度',
-  image: '图片',
-  video: '视频',
-  audio: '音频',
-  embed: '嵌入式媒体',
-  caption: '媒体库',
-  dragTip: '点击或拖动文件至此',
-  dropTip: '放开鼠标以上传',
-  selectAll: '选择全部',
-  deselect: '取消选择',
-  removeSelected: '删除选中项目',
-  externalInputPlaceHolder: '资源名称|资源地址',
-  externalInputTip: '使用“|”分隔资源名称和资源地址',
-  addLocalFile: '添加本地资源',
-  addExternalSource: '添加网络资源',
-  unnamedItem: '未命名项目',
-  confirmInsert: '插入选中项目'
-};
-
-/***/ }),
-/* 10 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = {
-  remove: 'Remove',
-  cancel: 'Cancel',
-  confirm: 'Confirm',
-  insert: 'Insert Selected Items',
-  width: 'Width',
-  height: 'Height',
-  image: 'Image',
-  video: 'Video',
-  audio: 'Audio',
-  embed: 'Embed',
-  caption: 'Media Library',
-  dragTip: 'Click Or Drag Files Here',
-  dropTip: 'Drop To Upload',
-  selectAll: 'Select All',
-  deselect: 'Deselect',
-  removeSelected: 'Remove Selected Items',
-  externalInputPlaceHolder: 'Source Name|Source URL',
-  externalInputTip: 'Split source name and source URL with "|", confirm by hit Enter.',
-  addLocalFile: 'Add from local',
-  addExternalSource: 'Add from Internet',
-  unnamedItem: 'Unnamed Item',
-  confirmInsert: 'Insert selected items'
-};
-
-/***/ }),
-/* 11 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _en = __webpack_require__(10);
-
-var _en2 = _interopRequireDefault(_en);
-
-var _zh = __webpack_require__(9);
-
-var _zh2 = _interopRequireDefault(_zh);
-
-var _zhHant = __webpack_require__(8);
-
-var _zhHant2 = _interopRequireDefault(_zhHant);
-
-var _pl = __webpack_require__(7);
-
-var _pl2 = _interopRequireDefault(_pl);
-
-var _kr = __webpack_require__(6);
-
-var _kr2 = _interopRequireDefault(_kr);
-
-var _jpn = __webpack_require__(5);
-
-var _jpn2 = _interopRequireDefault(_jpn);
-
-var _tr = __webpack_require__(4);
-
-var _tr2 = _interopRequireDefault(_tr);
-
-var _ru = __webpack_require__(3);
-
-var _ru2 = _interopRequireDefault(_ru);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = {
-  "en": _en2.default,
-  "zh": _zh2.default,
-  "zh-hant": _zhHant2.default,
-  "pl": _pl2.default,
-  "kr": _kr2.default,
-  "jpn": _jpn2.default,
-  "tr": _tr2.default,
-  "ru": _ru2.default
-};
-
-/***/ }),
-/* 12 */
-/***/ (function(module, exports) {
-
-
-/**
- * When source maps are enabled, `style-loader` uses a link element with a data-uri to
- * embed the css on the page. This breaks all relative urls because now they are relative to a
- * bundle instead of the current page.
- *
- * One solution is to only use full urls, but that may be impossible.
- *
- * Instead, this function "fixes" the relative urls to be absolute according to the current page location.
- *
- * A rudimentary test suite is located at `test/fixUrls.js` and can be run via the `npm test` command.
- *
- */
-
-module.exports = function (css) {
-  // get current location
-  var location = typeof window !== "undefined" && window.location;
-
-  if (!location) {
-    throw new Error("fixUrls requires window.location");
+  // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
   }
-
-	// blank or null?
-	if (!css || typeof css !== "string") {
-	  return css;
-  }
-
-  var baseUrl = location.protocol + "//" + location.host;
-  var currentDir = baseUrl + location.pathname.replace(/\/[^\/]*$/, "/");
-
-	// convert each url(...)
-	/*
-	This regular expression is just a way to recursively match brackets within
-	a string.
-
-	 /url\s*\(  = Match on the word "url" with any whitespace after it and then a parens
-	   (  = Start a capturing group
-	     (?:  = Start a non-capturing group
-	         [^)(]  = Match anything that isn't a parentheses
-	         |  = OR
-	         \(  = Match a start parentheses
-	             (?:  = Start another non-capturing groups
-	                 [^)(]+  = Match anything that isn't a parentheses
-	                 |  = OR
-	                 \(  = Match a start parentheses
-	                     [^)(]*  = Match anything that isn't a parentheses
-	                 \)  = Match a end parentheses
-	             )  = End Group
-              *\) = Match anything and then a close parens
-          )  = Close non-capturing group
-          *  = Match anything
-       )  = Close capturing group
-	 \)  = Match a close parens
-
-	 /gi  = Get all matches, not the first.  Be case insensitive.
-	 */
-	var fixedCss = css.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi, function(fullMatch, origUrl) {
-		// strip quotes (if they exist)
-		var unquotedOrigUrl = origUrl
-			.trim()
-			.replace(/^"(.*)"$/, function(o, $1){ return $1; })
-			.replace(/^'(.*)'$/, function(o, $1){ return $1; });
-
-		// already a full url? no change
-		if (/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/|\s*$)/i.test(unquotedOrigUrl)) {
-		  return fullMatch;
-		}
-
-		// convert the url to a full url
-		var newUrl;
-
-		if (unquotedOrigUrl.indexOf("//") === 0) {
-		  	//TODO: should we add protocol?
-			newUrl = unquotedOrigUrl;
-		} else if (unquotedOrigUrl.indexOf("/") === 0) {
-			// path should be relative to the base url
-			newUrl = baseUrl + unquotedOrigUrl; // already starts with '/'
-		} else {
-			// path should be relative to current directory
-			newUrl = currentDir + unquotedOrigUrl.replace(/^\.\//, ""); // Strip leading './'
-		}
-
-		// send back the fixed url(...)
-		return "url(" + JSON.stringify(newUrl) + ")";
-	});
-
-	// send back the fixed css
-	return fixedCss;
+  return url;
 };
 
+/***/ }),
+
+/***/ 933:
+/***/ ((module) => {
+
+"use strict";
+
+
+module.exports = function (i) {
+  return i[1];
+};
 
 /***/ }),
-/* 13 */
-/***/ (function(module, exports, __webpack_require__) {
+
+/***/ 316:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
+var content = __webpack_require__(468);
+
+if(typeof content === 'string') content = [[module.id, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(688)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ 688:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 /*
 	MIT License http://www.opensource.org/licenses/mit-license.php
@@ -669,7 +269,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(12);
+var	fixUrls = __webpack_require__(408);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -989,856 +589,348 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 14 */
-/***/ (function(module, exports) {
 
-module.exports = "data:font/ttf;base64,AAEAAAALAIAAAwAwT1MvMg8SBsIAAAC8AAAAYGNtYXBWNv1DAAABHAAAANRnYXNwAAAAEAAAAfAAAAAIZ2x5ZtZLKCQAAAH4AAAPTGhlYWQT25ZrAAARRAAAADZoaGVhB8ID3gAAEXwAAAAkaG10eGoAC+sAABGgAAAAdGxvY2EqcC3wAAASFAAAADxtYXhwACcAewAAElAAAAAgbmFtZZlKCfsAABJwAAABhnBvc3QAAwAAAAAT+AAAACAAAwPsAZAABQAAApkCzAAAAI8CmQLMAAAB6wAzAQkAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADprAPA/8AAQAPAAEAAAAABAAAAAAAAAAAAAAAgAAAAAAADAAAAAwAAABwAAQADAAAAHAADAAEAAAAcAAQAuAAAACoAIAAEAAoAAQAg4DTgN+BC4V3iQ+gN6Mno/ukD6QjpD+kT6RjpHOkm6YDprP/9//8AAAAAACDgNOA34ELhXeJD6A3oyej+6QHpB+kO6RHpFukc6SbpgOms//3//wAB/+Mf0B/OH8Qeqh3FF/wXQRcNFwsXCBcDFwIXABb9FvQWmxZwAAMAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAH//wAPAAEAAAAAAAAAAAACAAA3OQEAAAAAAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAIBAACBAwAC1QADAAcAAAEzESMhETMRAlaqqv6qqgLV/awCVP2sAAABAVYAgQMqAtUAAgAACQIBVgHU/iwC1f7W/tYAAQCqACsDVgOBAC4AAAEyFx4BFxYVFAcOAQcGIyInLgEnJjUzFBceARcWMzI3PgE3NjU0Jy4BJyYjFSc3AgBGPz5dGxsbG10+PkdGPz5dGxtWFBRFLy81NS8vRRQUFBRFLy811tYC1RsbXD4+Rkc+Pl0bGxsbXT4+RzYuL0UUFBQURS8uNjUvLkYUFKzW1gAAAwBWAAEDqgNVABsANwA7AAAlMjc+ATc2NTQnLgEnJiMiBw4BBwYVFBceARcWEzIXHgEXFhUUBw4BBwYjIicuAScmNTQ3PgE3NgMhFSECAEY/Pl0bGxsbXT4+R0Y/Pl0bGxsbXT4+R1hOTnMiISEic05NWVhOTnMiISEic05NfQGs/lRVGxtdPj5HRj4/XRsbGxtdPz5GRz4+XRsbAwAiIXRNTlhZTU50ISEhIXROTVlYTk10ISL+gFQAAAABAKoAAQOAA1UAHwAAATMRIREUBisBIiY1ESE1IxUUBiMhIiY9ATQ2MyEyFhUDAID+qhgSVhIYAaoqGBL+ABIaGhICABIYAwH+qv6AEhgYEgHWqioSGhoSqhIYGBIAAAABAIAAAwOAA1UAMwAAJTIWFRQGIyImNTwBNyUOASMiJjU0NjMyFhclLgE1NDYzMhYVFAYjIiYnBR4BFRQGBwU+AQMAM0lJMzNJAv7SEiwaNExLNRktEgEsAQNLNTRMSzUZLRL+1AEDAgIBMBAs/UkzM0tLMwcPBrAREUs1NEwSEK4HDwg0TEw0NUsTEbAIDwcIDwewDxEAAAMAVgArA6oDVQACAAYAGgAALQI3FTM1FyERFAYjISImNREhNTQ2OwEyFhUBgAFA/sAqrFQBADAk/VQkMAEAMCSsJDCr1qrWVlZW/dYkMjIkAipWJDAwJAAEAIAAgQOAAtUAAwAHAAsADwAAEyEVIRU1IRUBNSEVJTUhFYADAP0AAwD9AAMA/QADAALVVKxWVv6sVFSqVlYABABVACIDqwN3AAQAIQA9AEIAACUzESMREyIHDgEHBhUUFx4BFxYzMjc+ATc2NTQnLgEnJiMRIicuAScmNTQ3PgE3NjMyFx4BFxYVFAcOAQcGAzM1IxUB1VZWK1hOTnQhIiIhdE5OWFhOTnQhIiIhdE5OWEc+Pl0aGxsaXT4+R0c+Pl0aGxsaXT4+clZW9wEA/wACgCEic05OWFlNTnQhIiIhdE5NWVhOTnMiIf0AGxtdPj5HRj8+XBsbGxtcPj9GRz4+XRsbAdZVVQAABABVACIDqwN3AAQAIQA9AFIAACUzNSMVEyIHDgEHBhUUFx4BFxYzMjc+ATc2NTQnLgEnJiMRIicuAScmNTQ3PgE3NjMyFx4BFxYVFAcOAQcGAyIGFTM0NjMyFhUUBhUzNDY1NCYjAdVWVitYTk50ISIiIXROTlhYTk50ISIiIXROTlhHPj5dGhsbGl0+PkdHPj5dGhsbGl0+PkdHZFYyIyMygFaAZEfNVVUCqiEic05OWFlNTnQhIiIhdE5NWVhOTnMiIf0AGxtdPj5HRj8+XBsbGxtcPj9GRz4+XRsbAlZkRyMyMiNALWhIPVBHZAAAAgBVAM0DqwLNAAUACwAAASc3JwkBJTcnNwkBAZHExDz/AAEAARrExDwBAP8AAQnExDz/AP8APMTEPP8A/wAAAAMAVQAiA6sDdwAcACsAOgAAASIHDgEHBhUUFx4BFxYzMjc+ATc2NTQnLgEnJiMBNDc+ATc2MzIWFwEuATUBIiYnAR4BFRQHDgEHBiMCAFhOTXQiIiIidE1OWFhOTXQiIiIidE1OWP6rGxtcPj9GOmot/iIjJQFVOmotAd4jJRsbXD4/RgN3ISJ0Tk1YWE5OdCEiIiF0Tk5YWE1OdCIh/lZGPj5dGxslI/4iLWo6/qomIwHeLWs5Rz4+XRsbAAAAAAMAgADNA4ACzQADAAcACwAANyE1ITUhNSE1FSE1gAMA/QADAP0AAwDNVYBV1lZWAAEAZAAlA1wDXABEAAABERQHBgcGBwYjIicmJyYnJjU0NzY3Njc2MzIXEQURFAcGBwYHBiMiJyYnJicmNTQ3Njc2NzYzMhcRNDc2NyU2MzIXFhUDXBERGhkaGRYXGRoZGhEREREaGRoZFzMr/oURERoZGhkXFhkaGRoRERERGhkaGRY0KwoJDwGbBggUDg4DLP3WGBQTCgsFBQUFCwoTFBgZExQKCwUFEwEKdv6iGRMTCwsFBQUFCwsTExkZExMLCgYFEwHeDw0MBX8CDg4UAAAEAHUAQgOJA1YALwA8AGIAeAAAAS4BBw4BJy4BJy4BBwYiJyYGBw4BJyYGBxQVHAEVFBUeATM2MzoBMzIzMjY3PAE1BSImNTQ2MzIWFRQGJyUqASM8ATU6ATMUFhUUFxwBFQYHFAYHDgEnLgE3PgE3OgEzPAE1BT4BNzoBMxQWBw4BJy4BNz4BNzoBMwKBARkZChUJCxcEFEMvBw8HHikMDCgdFyILCxgWNDM0ZzQzNBsaAf77L0FBMDBAQDEBtx8/IDRoNgEBAQENCxVFICIlBgc3JAcNCf7OAQICEyQTAwUFSiMmOAIBOiYHEAkCzhcaAQEBAwIJCC0fCAEBBhgbGxYGBBMVKCgpUCgoKQ8VARcaSpRK7T8uMEA/LzBAARchPyAKEgkzMjNmMjMzFCwRIBAOD0IjJjQDN2053QwUCi5dLSUsBgVEJig+BAAAAAAEAAAAAAQAA0AAGwAzAE8AUwAAARQXHgEXFjMyNz4BNzY1NCcuAScmIyIHDgEHBgEjLgEjISIGByMiBhURFBYzITI2NRE0JgEiJy4BJyY1NDc+ATc2MzIXHgEXFhUUBw4BBwYBIzUzATAQETgmJisrJiY4ERAQETgmJisrJiY4ERACkOAMJDD/ADAkDOAaJiYaA4AaJib+Jjs0M00XFhYXTTM0Ozs0M00XFhYXTTM0AYWAgAFgKyYmOBEQEBE4JiYrKyYmOBEQEBE4JiYBNTBQUDAmGv3AGiYmGgJAGib9hBYXTTM0Ozs0M00XFhYXTTM0Ozs0M00XFgG8QAABAJEAogOAAt4ABgAAAScHFwEnAQGAszzvAgA8/jwBGrM87wIAPP48AAAAAAEA4gCAAx4CyQAmAAABNzY0JyYiDwEnJiIHBhQfAQcGFBceATMyNj8BFx4BMzI2NzY0LwECPOINDQwkDOLiDCQMDQ3i4g0NBhAICBAG4uIGEAgIEAYNDeIBq+IMIw0MDOLiDAwNIwzi4g0jDAcGBgfh4QcGBgcMIw3iAAACAIAAYwNqA00AIgAvAAABIyc+ATU0Jy4BJyYjIgcOAQcGFRQXHgEXFjMyNjcXFRc3JyEiJjU0NjMyFhUUBiMClSEMHyQWFkszMjo5MzJLFhYWFksyMzk0XCUL1j/V/wBPcXFPUHBwUAF3DCRdMzoyM0sWFhYWSzMyOjkyM0sWFiQfDCLUP9VxT1BwcFBPcQACAGQAIgOcA3cATQBZAAABPgE1NCYnNz4BLwEuAQ8BLgEvAS4BKwEiBg8BDgEHJyYGDwEGFh8BDgEVFBYXBw4BHwEeAT8BHgEfAR4BOwEyNj8BPgE3FxY2PwE2JicFIiY1NDYzMhYVFAYDPQECAgFaBgMEVQQPB2oRJBQQAQwIqggMARAUJBFqBw8EVQQDBloBAgIBWgYDBFUEDwdqESQUEAEMCKoIDAEQFCQRagcPBFUEAwb+aT5XVz4+V1cBowoVCwsUC0YFDweUBwUDKgwVCHIHCgoHcggVDCoDBQeUBw8FRgsVCgsVCkYFEAeTBwUCKw0VCHEICgoIcQgVDSsDBgeTBxAFJlg+PldXPj5YAAEA1QCiAysC9wALAAABIREjESE1IREzESEDK/8AVv8AAQBWAQABov8AAQBVAQD/AAAAAAAJAAAAQAQAA0AAAwAHAAsADwATABcAGwAfACIAABMRIREBIzUzNSM1MzUjNTMBIREhEyM1MzUjNTM1IzUzBRElAAQA/MCAgICAgIACQP4AAgDAgICAgICA/cABAANA/QADAP1AgICAgID9gAKA/YCAgICAgID+gMAAAAAABgBA/8ADwAPAABkAIQA5AEcAVQBjAAABLgEnLgEnLgEjISIGFREUFjMhMjY1ETQmJyceARcjNR4BExQGIyEiJjURNDYzMDM6ATMyMRUUFjsBAyEiJjU0NjMhMhYVFAYnISImNTQ2MyEyFhUUBichIiY1NDYzITIWFRQGA5YRLRkaMxcnKQv+ECEvLyEC4CEvDhyFFyUNmhEphgkH/SAHCQkHTU66TU4TDeCg/kANExMNAcANExMN/kANExMNAcANExMN/kANExMNAcANExMC2xczGhktERwOLyH8oCEvLyECcAspJzYXKRGaDSX86AcJCQcDYAcJ4A0T/gATDQ0TEw0NE4ATDQ0TEw0NE4ATDQ0TEw0NEwAAAAcAAP/ABAADRgALABcAIwAvADsARwBTAAAlNDYzMhYVFAYjIiYBNDYzMhYVFAYjIiYlNDYzMhYVFAYjIiYBNDYzMhYVFAYjIiYBNDYzMhYVFAYjIiYlNDYzMhYVFAYjIiYBNDYzMhYVFAYjIiYBoDgoKDg4KCg4/mA4KCg4OCgoOANAOCgoODgoKDj9OjgoKDg4KCg4Akw4KCg4OCgoOP20OCgoODgoKDgCTDgoKDg4KCg4ICg4OCgoODgByCg4OCgoODgoKDg4KCg4OAFOKDg4KCg4OP3cKDg4KCg4OCgoODgoKDg4AnQoODgoKDg4AAUAfAAAA4QDVQAiAC0AOABGAFQAAAEjNTQmKwEiBh0BIyIGFRQWOwERFBYzITI2NREzMjY1NCYjJTQ2OwEyFh0BIzUBFAYjISImNREhEQEiBh0BFBYzMjY9ATQmMyIGHQEUFjMyNj0BNCYDXZtEMJwwRJsQFxcQJ0QwAYQwRCcQFxcQ/i8WEJwQFugBXRcQ/nwQFwHS/skQFhYQEBcXjBAXFxAQFhYCuicwREQwJxcQEBb+BzBERDAB+RYQEBcnEBcXECcn/ZMQFhYQAfn+BwGEFxDoEBcXEOgQFxcQ6BAXFxDoEBcAAAABAAAAAQAANAmLwV8PPPUACwQAAAAAANheKPcAAAAA2F4o9wAA/8AEAAPAAAAACAACAAAAAAAAAAEAAAPA/8AAAAQAAAAAAAQAAAEAAAAAAAAAAAAAAAAAAAAdBAAAAAAAAAAAAAAAAgAAAAQAAQAEAAFWBAAAqgQAAFYEAACqBAAAgAQAAFYEAACABAAAVQQAAFUEAABVBAAAVQQAAIAEAABkBAAAdQQAAAAEAACRBAAA4gQAAIAEAABkBAAA1QQAAAAEAABABAAAAAQAAHwAAAAAAAoAFAAeADIAQACIAOYBFgFiAY4BrgIUAowCrAMMAyQDjAQ0BLIEyAUGBU4F1gXwBi4GugcyB6YAAQAAAB0AeQAJAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA4ArgABAAAAAAABAAcAAAABAAAAAAACAAcAYAABAAAAAAADAAcANgABAAAAAAAEAAcAdQABAAAAAAAFAAsAFQABAAAAAAAGAAcASwABAAAAAAAKABoAigADAAEECQABAA4ABwADAAEECQACAA4AZwADAAEECQADAA4APQADAAEECQAEAA4AfAADAAEECQAFABYAIAADAAEECQAGAA4AUgADAAEECQAKADQApGljb21vb24AaQBjAG8AbQBvAG8AblZlcnNpb24gMS4wAFYAZQByAHMAaQBvAG4AIAAxAC4AMGljb21vb24AaQBjAG8AbQBvAG8Abmljb21vb24AaQBjAG8AbQBvAG8AblJlZ3VsYXIAUgBlAGcAdQBsAGEAcmljb21vb24AaQBjAG8AbQBvAG8AbkZvbnQgZ2VuZXJhdGVkIGJ5IEljb01vb24uAEYAbwBuAHQAIABnAGUAbgBlAHIAYQB0AGUAZAAgAGIAeQAgAEkAYwBvAE0AbwBvAG4ALgAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+/***/ 408:
+/***/ ((module) => {
 
-/***/ }),
-/* 15 */
-/***/ (function(module, exports) {
 
-/*
-	MIT License http://www.opensource.org/licenses/mit-license.php
-	Author Tobias Koppers @sokra
-*/
-// css base code, injected by the css-loader
-module.exports = function(useSourceMap) {
-	var list = [];
+/**
+ * When source maps are enabled, `style-loader` uses a link element with a data-uri to
+ * embed the css on the page. This breaks all relative urls because now they are relative to a
+ * bundle instead of the current page.
+ *
+ * One solution is to only use full urls, but that may be impossible.
+ *
+ * Instead, this function "fixes" the relative urls to be absolute according to the current page location.
+ *
+ * A rudimentary test suite is located at `test/fixUrls.js` and can be run via the `npm test` command.
+ *
+ */
 
-	// return the list of modules as css string
-	list.toString = function toString() {
-		return this.map(function (item) {
-			var content = cssWithMappingToString(item, useSourceMap);
-			if(item[2]) {
-				return "@media " + item[2] + "{" + content + "}";
-			} else {
-				return content;
-			}
-		}).join("");
-	};
+module.exports = function (css) {
+  // get current location
+  var location = typeof window !== "undefined" && window.location;
 
-	// import a list of modules into the list
-	list.i = function(modules, mediaQuery) {
-		if(typeof modules === "string")
-			modules = [[null, modules, ""]];
-		var alreadyImportedModules = {};
-		for(var i = 0; i < this.length; i++) {
-			var id = this[i][0];
-			if(typeof id === "number")
-				alreadyImportedModules[id] = true;
+  if (!location) {
+    throw new Error("fixUrls requires window.location");
+  }
+
+	// blank or null?
+	if (!css || typeof css !== "string") {
+	  return css;
+  }
+
+  var baseUrl = location.protocol + "//" + location.host;
+  var currentDir = baseUrl + location.pathname.replace(/\/[^\/]*$/, "/");
+
+	// convert each url(...)
+	/*
+	This regular expression is just a way to recursively match brackets within
+	a string.
+
+	 /url\s*\(  = Match on the word "url" with any whitespace after it and then a parens
+	   (  = Start a capturing group
+	     (?:  = Start a non-capturing group
+	         [^)(]  = Match anything that isn't a parentheses
+	         |  = OR
+	         \(  = Match a start parentheses
+	             (?:  = Start another non-capturing groups
+	                 [^)(]+  = Match anything that isn't a parentheses
+	                 |  = OR
+	                 \(  = Match a start parentheses
+	                     [^)(]*  = Match anything that isn't a parentheses
+	                 \)  = Match a end parentheses
+	             )  = End Group
+              *\) = Match anything and then a close parens
+          )  = Close non-capturing group
+          *  = Match anything
+       )  = Close capturing group
+	 \)  = Match a close parens
+
+	 /gi  = Get all matches, not the first.  Be case insensitive.
+	 */
+	var fixedCss = css.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi, function(fullMatch, origUrl) {
+		// strip quotes (if they exist)
+		var unquotedOrigUrl = origUrl
+			.trim()
+			.replace(/^"(.*)"$/, function(o, $1){ return $1; })
+			.replace(/^'(.*)'$/, function(o, $1){ return $1; });
+
+		// already a full url? no change
+		if (/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/|\s*$)/i.test(unquotedOrigUrl)) {
+		  return fullMatch;
 		}
-		for(i = 0; i < modules.length; i++) {
-			var item = modules[i];
-			// skip already imported module
-			// this implementation is not 100% perfect for weird media query combinations
-			//  when a module is imported multiple times with different media queries.
-			//  I hope this will never occur (Hey this way we have smaller bundles)
-			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-				if(mediaQuery && !item[2]) {
-					item[2] = mediaQuery;
-				} else if(mediaQuery) {
-					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-				}
-				list.push(item);
-			}
+
+		// convert the url to a full url
+		var newUrl;
+
+		if (unquotedOrigUrl.indexOf("//") === 0) {
+		  	//TODO: should we add protocol?
+			newUrl = unquotedOrigUrl;
+		} else if (unquotedOrigUrl.indexOf("/") === 0) {
+			// path should be relative to the base url
+			newUrl = baseUrl + unquotedOrigUrl; // already starts with '/'
+		} else {
+			// path should be relative to current directory
+			newUrl = currentDir + unquotedOrigUrl.replace(/^\.\//, ""); // Strip leading './'
 		}
-	};
-	return list;
+
+		// send back the fixed url(...)
+		return "url(" + JSON.stringify(newUrl) + ")";
+	});
+
+	// send back the fixed css
+	return fixedCss;
 };
 
-function cssWithMappingToString(item, useSourceMap) {
-	var content = item[1] || '';
-	var cssMapping = item[3];
-	if (!cssMapping) {
-		return content;
-	}
-
-	if (useSourceMap && typeof btoa === 'function') {
-		var sourceMapping = toComment(cssMapping);
-		var sourceURLs = cssMapping.sources.map(function (source) {
-			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
-		});
-
-		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
-	}
-
-	return [content].join('\n');
-}
-
-// Adapted from convert-source-map (MIT)
-function toComment(sourceMap) {
-	// eslint-disable-next-line no-undef
-	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
-	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
-
-	return '/*# ' + data + ' */';
-}
-
 
 /***/ }),
-/* 16 */
-/***/ (function(module, exports) {
 
-module.exports = function escape(url) {
-    if (typeof url !== 'string') {
-        return url
-    }
-    // If url is already wrapped in quotes, remove them
-    if (/^['"].*['"]$/.test(url)) {
-        url = url.slice(1, -1);
-    }
-    // Should url be wrapped?
-    // See https://drafts.csswg.org/css-values-3/#urls
-    if (/["'() \t\n]/.test(url)) {
-        return '"' + url.replace(/"/g, '\\"').replace(/\n/g, '\\n') + '"'
-    }
-
-    return url
-}
-
-
-/***/ }),
-/* 17 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var escape = __webpack_require__(16);
-exports = module.exports = __webpack_require__(15)(false);
-// imports
-
-
-// module
-exports.push([module.i, "@font-face {\n  font-family: 'bf-icons';\n  src: url(" + escape(__webpack_require__(14)) + ") format(\"truetype\");\n  font-weight: normal;\n  font-style: normal; }\n\n.braft-finder [class^=\"braft-icon-\"], .braft-finder [class*=\" braft-icon-\"] {\n  /* use !important to prevent issues with browser extensions that change fonts */\n  font-family: 'bf-icons' !important;\n  font-style: normal;\n  font-weight: normal;\n  font-variant: normal;\n  text-transform: none;\n  /* Better Font Rendering =========== */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\n.braft-finder .braft-icon-code:before {\n  content: \"\\E903\"; }\n\n.braft-finder .braft-icon-pause:before {\n  content: \"\\E034\"; }\n\n.braft-finder .braft-icon-play_arrow:before {\n  content: \"\\E037\"; }\n\n.braft-finder .braft-icon-bin:before {\n  content: \"\\E9AC\"; }\n\n.braft-finder .braft-icon-replay:before {\n  content: \"\\E042\"; }\n\n.braft-finder .braft-icon-close:before {\n  content: \"\\E913\"; }\n\n.braft-finder .braft-icon-music:before {\n  content: \"\\E90E\"; }\n\n.braft-finder .braft-icon-camera:before {\n  content: \"\\E911\"; }\n\n.braft-finder .braft-icon-file-text:before {\n  content: \"\\E926\"; }\n\n.braft-finder .braft-icon-film:before {\n  content: \"\\E91C\"; }\n\n.braft-finder .braft-icon-paste:before {\n  content: \"\\E92D\"; }\n\n.braft-finder .braft-icon-spinner:before {\n  content: \"\\E980\"; }\n\n.braft-finder .braft-icon-media:before {\n  content: \"\\E90F\"; }\n\n.braft-finder .braft-icon-add:before {\n  content: \"\\E918\"; }\n\n.braft-finder .braft-icon-done:before {\n  content: \"\\E912\"; }\n\n.braft-finder .braft-icon-drop-down:before {\n  content: \"\\E906\"; }\n\n.braft-finder .braft-icon-drop-up:before {\n  content: \"\\E909\"; }\n\n.braft-finder .braft-icon-help:before {\n  content: \"\\E902\"; }\n\n.braft-finder .braft-icon-info:before {\n  content: \"\\E901\"; }\n\n.braft-finder .braft-icon-menu:before {\n  content: \"\\E908\"; }\n\n.pull-left {\n  float: left; }\n\n.pull-right {\n  float: right; }\n\n.braft-finder .bf-uploader {\n  position: relative;\n  height: 370px;\n  margin: 0; }\n  .braft-finder .bf-uploader.draging .bf-list-wrap,\n  .braft-finder .bf-uploader.draging .bf-add-external {\n    pointer-events: none; }\n  .braft-finder .bf-uploader input::-webkit-input-placeholder {\n    color: #ccc; }\n  .braft-finder .bf-uploader input::-moz-placeholder {\n    color: #ccc; }\n  .braft-finder .bf-uploader input::-ms-input-placeholder {\n    color: #ccc; }\n\n.braft-finder .bf-list-wrap {\n  position: relative;\n  height: 370px; }\n\n.braft-finder .bf-list-tools {\n  z-index: 1;\n  position: absolute;\n  top: 0;\n  right: 0;\n  left: 0;\n  height: 20px;\n  padding: 0 15px;\n  background-color: #fff; }\n  .braft-finder .bf-list-tools span {\n    height: 26px;\n    font-size: 12px;\n    line-height: 20px;\n    cursor: pointer;\n    user-select: none; }\n    .braft-finder .bf-list-tools span[disabled] {\n      opacity: 0.3;\n      pointer-events: none; }\n  .braft-finder .bf-list-tools .bf-select-all,\n  .braft-finder .bf-list-tools .bf-deselect-all {\n    float: left;\n    margin-right: 5px;\n    color: #bbb; }\n    .braft-finder .bf-list-tools .bf-select-all:hover,\n    .braft-finder .bf-list-tools .bf-deselect-all:hover {\n      color: #3498db; }\n  .braft-finder .bf-list-tools .bf-remove-selected {\n    float: right;\n    color: #e74c3c; }\n    .braft-finder .bf-list-tools .bf-remove-selected:hover {\n      color: #c92e1e; }\n\n.braft-finder .bf-list {\n  position: absolute;\n  z-index: 1;\n  top: 30px;\n  right: 0;\n  left: 0;\n  bottom: 0;\n  margin: 0;\n  padding: 0 10px;\n  list-style: none;\n  overflow: auto; }\n  .braft-finder .bf-list::-webkit-scrollbar {\n    width: 5px;\n    height: 5px;\n    background-color: #fff; }\n  .braft-finder .bf-list::-webkit-scrollbar-track {\n    background-color: #fff; }\n  .braft-finder .bf-list::-webkit-scrollbar-thumb {\n    background-color: rgba(0, 0, 0, 0.1); }\n\n.braft-finder .bf-item,\n.braft-finder .bf-add-item {\n  position: relative;\n  display: block;\n  float: left;\n  width: 113px;\n  height: 113px;\n  margin: 5px;\n  overflow: hidden;\n  border-radius: 3px; }\n\n.braft-finder .bf-item.uploading {\n  pointer-events: none; }\n\n.braft-finder .bf-item.error::before {\n  display: block;\n  content: \"\\E901\"; }\n\n.braft-finder .bf-item.error::after {\n  position: absolute;\n  z-index: 1;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  background-color: rgba(231, 76, 60, 0.8);\n  content: \"\"; }\n\n.braft-finder .bf-item.error:hover::after {\n  background-color: rgba(231, 76, 60, 0.9); }\n\n.braft-finder .bf-item.error .bf-item-uploading {\n  display: none; }\n\n.braft-finder .bf-add-item {\n  background-color: #ecedef;\n  color: #999; }\n  .braft-finder .bf-add-item:hover {\n    background-color: #e1e2e3; }\n  .braft-finder .bf-add-item i {\n    display: block;\n    width: 113px;\n    height: 113px;\n    font-size: 48px;\n    line-height: 113px;\n    text-align: center; }\n  .braft-finder .bf-add-item input {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    opacity: 0;\n    cursor: pointer; }\n\n.braft-finder .bf-item::before {\n  display: none;\n  position: absolute;\n  z-index: 2;\n  top: 0;\n  left: 0;\n  width: 113px;\n  height: 113px;\n  color: #fff;\n  font-size: 48px;\n  font-family: \"bf-icons\";\n  line-height: 113px;\n  text-align: center; }\n\n.braft-finder .bf-item::after {\n  position: absolute;\n  z-index: 1;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  background-color: rgba(52, 152, 219, 0);\n  content: \"\"; }\n\n.braft-finder .bf-item:hover::after {\n  background-color: rgba(52, 152, 219, 0.3); }\n\n.braft-finder .bf-item:hover .bf-item-remove {\n  display: block; }\n\n.braft-finder .bf-item.active::before {\n  display: block;\n  content: \"\\E912\"; }\n\n.braft-finder .bf-item.active::after {\n  background-color: rgba(52, 152, 219, 0.6); }\n\n.braft-finder .bf-item.active:hover::after {\n  background-color: rgba(52, 152, 219, 0.8); }\n\n.braft-finder .bf-item.active:hover .bf-item-remove {\n  display: none; }\n\n.braft-finder .bf-item-uploading {\n  box-sizing: border-box;\n  position: absolute;\n  z-index: 3;\n  top: 52px;\n  left: 10px;\n  width: 93px;\n  height: 10px;\n  overflow: hidden;\n  background-color: rgba(255, 255, 255, 0.3);\n  border-radius: 5px;\n  box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.5); }\n\n.braft-finder .bf-item-uploading-bar {\n  height: 10px;\n  background-color: #3498db;\n  border-radius: 0; }\n\n.braft-finder .bf-item-remove {\n  display: none;\n  position: absolute;\n  z-index: 2;\n  top: 0;\n  right: 0;\n  width: 28px;\n  height: 28px;\n  color: #fff;\n  font-size: 18px;\n  line-height: 28px;\n  text-align: center;\n  cursor: pointer; }\n  .braft-finder .bf-item-remove:hover {\n    color: #e74c3c; }\n\n.braft-finder .bf-item-title {\n  display: none;\n  box-sizing: border-box;\n  position: absolute;\n  z-index: 2;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  height: 40px;\n  padding: 0 5px;\n  overflow: hidden;\n  background-image: linear-gradient(rgba(0, 0, 0, 0), black);\n  color: #fff;\n  font-size: 12px;\n  line-height: 55px;\n  text-align: center;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n.braft-finder .bf-image {\n  width: 100%;\n  height: 100%;\n  background-color: #eee;\n  user-select: none; }\n  .braft-finder .bf-image img {\n    display: block;\n    width: 100%;\n    height: 100%;\n    object-fit: cover; }\n\n.braft-finder .bf-video {\n  background-color: #8e44ad; }\n\n.braft-finder .bf-audio {\n  background-color: #f39c12; }\n\n.braft-finder .bf-embed {\n  background-color: #f1c40f; }\n\n.braft-finder .bf-icon {\n  display: block;\n  width: 113px;\n  height: 113px;\n  overflow: hidden;\n  color: #fff;\n  text-align: center;\n  text-decoration: none; }\n  .braft-finder .bf-icon i,\n  .braft-finder .bf-icon span {\n    display: block; }\n  .braft-finder .bf-icon i {\n    margin-top: 35px;\n    font-size: 24px; }\n  .braft-finder .bf-icon span {\n    width: 103px;\n    margin: 10px auto;\n    overflow: hidden;\n    font-size: 12px;\n    text-overflow: ellipsis;\n    white-space: nowrap; }\n\n.braft-finder .bf-drag-uploader {\n  box-sizing: border-box;\n  position: absolute;\n  z-index: 2;\n  top: 0;\n  right: 15px;\n  left: 15px;\n  height: 100%;\n  background-color: #fff;\n  border: dashed 1px #bbb;\n  text-align: center;\n  opacity: 0;\n  pointer-events: none; }\n  .braft-finder .bf-drag-uploader:hover, .braft-finder .bf-drag-uploader.draging {\n    background-color: #f1f2f3; }\n  .braft-finder .bf-drag-uploader.active {\n    opacity: 1;\n    pointer-events: auto; }\n\n.braft-finder .bf-uploader-buttons {\n  height: 370px;\n  margin: auto;\n  text-align: center; }\n\n.braft-finder .bf-drag-tip {\n  display: inline-block;\n  margin-top: 150px;\n  color: #ccc;\n  text-align: center;\n  font-size: 28px;\n  font-weight: normal;\n  line-height: 40px; }\n  .braft-finder .bf-drag-tip input {\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    opacity: 0;\n    color: #fff;\n    text-indent: -100px;\n    cursor: pointer; }\n\n.braft-finder .bf-manager-footer {\n  height: 36px;\n  margin: 10px 0;\n  padding: 0 15px; }\n  .braft-finder .bf-manager-footer .button {\n    float: right;\n    height: 36px;\n    margin-left: 5px;\n    padding: 0 35px;\n    font-size: 12px;\n    font-weight: 700;\n    border: none;\n    border-radius: 3px;\n    cursor: pointer; }\n  .braft-finder .bf-manager-footer .button-insert {\n    color: #fff;\n    background-color: #3498db; }\n    .braft-finder .bf-manager-footer .button-insert:hover {\n      background-color: #2084c7; }\n    .braft-finder .bf-manager-footer .button-insert[disabled] {\n      opacity: 0.3;\n      pointer-events: none;\n      filter: grayscale(0.4); }\n  .braft-finder .bf-manager-footer .button-cancel {\n    color: #999;\n    background-color: #e8e8e9; }\n    .braft-finder .bf-manager-footer .button-cancel:hover {\n      background-color: #d8d8d9; }\n\n.braft-finder .bf-toggle-external-form {\n  color: #666;\n  font-size: 12px;\n  line-height: 36px; }\n  .braft-finder .bf-toggle-external-form span {\n    color: #bbb;\n    line-height: 16px;\n    cursor: pointer;\n    user-select: none; }\n    .braft-finder .bf-toggle-external-form span:hover {\n      color: #3498db; }\n    .braft-finder .bf-toggle-external-form span i {\n      position: relative;\n      top: 2px;\n      font-size: 16px; }\n\n.braft-finder .bf-add-external {\n  position: absolute;\n  z-index: 3;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  background-color: #fff; }\n  .braft-finder .bf-add-external input {\n    border: solid 1px rgba(0, 0, 0, 0.3);\n    border: solid 0.5px rgba(0, 0, 0, 0.3);\n    box-shadow: none; }\n    .braft-finder .bf-add-external input:focus {\n      border-color: #3498db;\n      box-shadow: none; }\n\n.braft-finder .bf-external-form {\n  width: 500px;\n  max-width: 90%;\n  margin: 91px auto 0 auto; }\n\n.braft-finder .bf-external-input {\n  display: flex;\n  position: relative;\n  width: 100%;\n  height: 40px;\n  margin-bottom: 10px; }\n  .braft-finder .bf-external-input div {\n    flex: 1;\n    height: 40px; }\n  .braft-finder .bf-external-input input,\n  .braft-finder .bf-external-input textarea {\n    display: block;\n    box-sizing: border-box;\n    width: 100%;\n    height: 40px;\n    padding: 0 10px;\n    border: none;\n    border-radius: 3px;\n    outline: none;\n    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.3);\n    color: #999;\n    font-size: 18px; }\n    .braft-finder .bf-external-input input:focus,\n    .braft-finder .bf-external-input textarea:focus {\n      box-shadow: inset 0 0 0 1px #3498db; }\n  .braft-finder .bf-external-input textarea {\n    height: 100px;\n    font-size: 14px; }\n  .braft-finder .bf-external-input button {\n    margin-left: 5px;\n    padding: 0 15px;\n    height: 40px;\n    background-color: #3498db;\n    border: none;\n    border-radius: 3px;\n    color: #fff;\n    font-size: 14px;\n    font-weight: bold;\n    cursor: pointer; }\n    .braft-finder .bf-external-input button:disabled {\n      opacity: 0.3;\n      pointer-events: none;\n      filter: grayscale(0.4); }\n    .braft-finder .bf-external-input button:hover {\n      background-color: #2084c7; }\n\n.braft-finder .bf-switch-external-type {\n  overflow: hidden;\n  text-align: center; }\n  .braft-finder .bf-switch-external-type button {\n    width: auto;\n    height: 30px;\n    margin: 10px 5px;\n    padding: 0 10px;\n    background-color: #e8e9ea;\n    border: none;\n    border-radius: 3px;\n    color: #999;\n    font-size: 12px;\n    cursor: pointer; }\n    .braft-finder .bf-switch-external-type button:hover {\n      background-color: #d8d9da; }\n    .braft-finder .bf-switch-external-type button:only-child {\n      display: none; }\n  .braft-finder .bf-switch-external-type[data-type=\"IMAGE\"] [data-type=\"IMAGE\"],\n  .braft-finder .bf-switch-external-type[data-type=\"VIDEO\"] [data-type=\"VIDEO\"],\n  .braft-finder .bf-switch-external-type[data-type=\"AUDIO\"] [data-type=\"AUDIO\"],\n  .braft-finder .bf-switch-external-type[data-type=\"EMBED\"] [data-type=\"EMBED\"],\n  .braft-finder .bf-switch-external-type[data-type=\"FILE\"] [data-type=\"FILE\"] {\n    background-color: #3498db;\n    color: #fff; }\n\n.braft-finder .bf-external-tip {\n  display: block;\n  margin-top: 15px;\n  color: #ccc;\n  font-size: 12px;\n  text-align: center; }\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 18 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(17);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(13)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-/* 19 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 854:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
+module.exports = __webpack_require__.p + "65287acaa82995b84719.ttf?sirizn";
 
+/***/ }),
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
+/***/ 156:
+/***/ ((module) => {
+
+"use strict";
+module.exports = __WEBPACK_EXTERNAL_MODULE__156__;
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			id: moduleId,
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		__webpack_require__.p = "/";
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			826: 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+(() => {
+"use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  ImageUtils: () => (/* reexport */ image_namespaceObject),
+  "default": () => (/* binding */ BraftFinder)
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+// NAMESPACE OBJECT: ./utils/image.js
+var image_namespaceObject = {};
+__webpack_require__.r(image_namespaceObject);
+__webpack_require__.d(image_namespaceObject, {
+  compressImage: () => (compressImage)
+});
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-__webpack_require__(18);
-
-var _react = __webpack_require__(2);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _base = __webpack_require__(1);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var defaultAccepts = {
-  image: 'image/png,image/jpeg,image/gif,image/webp,image/apng,image/svg',
-  video: 'video/mp4',
-  audio: 'audio/mp3'
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(156);
+var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
+;// CONCATENATED MODULE: ./utils/base.js
+var UniqueIndex = function UniqueIndex() {
+  if (isNaN(window.__BRAFT_MM_UNIQUE_INDEX__)) {
+    window.__BRAFT_MM_UNIQUE_INDEX__ = 1;
+  } else {
+    window.__BRAFT_MM_UNIQUE_INDEX__ += 1;
+  }
+  return window.__BRAFT_MM_UNIQUE_INDEX__;
 };
-
-var BraftFinderView = function (_React$Component) {
-  _inherits(BraftFinderView, _React$Component);
-
-  function BraftFinderView(props) {
-    _classCallCheck(this, BraftFinderView);
-
-    var _this = _possibleConstructorReturn(this, (BraftFinderView.__proto__ || Object.getPrototypeOf(BraftFinderView)).call(this, props));
-
-    _this.toggleSelectItem = function (event) {
-
-      var itemId = event.currentTarget.dataset.id;
-      var item = _this.controller.getMediaItem(itemId);
-
-      if (!item) {
-        return false;
-      }
-
-      if (item.selected) {
-
-        if (!_this.props.onBeforeDeselect || _this.props.onBeforeDeselect([item], _this.controller.getItems()) !== false) {
-          _this.controller.deselectMediaItem(itemId);
-          _this.props.onDeselect && _this.props.onDeselect([item], _this.controller.getItems());
-        }
-      } else {
-
-        if (!_this.props.onBeforeSelect || _this.props.onBeforeSelect([item], _this.controller.getItems()) !== false) {
-          _this.controller.selectMediaItem(itemId);
-          _this.props.onSelect && _this.props.onSelect([item], _this.controller.getItems());
-        }
-      }
+;// CONCATENATED MODULE: ./utils/image.js
+var compressImage = function compressImage(url) {
+  var width = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1280;
+  var height = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 800;
+  return new Promise(function (resolve, reject) {
+    var image = new Image();
+    image.src = url;
+    image.onerror = function (error) {
+      reject(error);
     };
-
-    _this.removeItem = function (event) {
-
-      var itemId = event.currentTarget.dataset.id;
-      var item = _this.controller.getMediaItem(itemId);
-
-      if (!item) {
-        return false;
-      }
-
-      if (!_this.props.onBeforeRemove || _this.props.onBeforeRemove([item], _this.controller.getItems()) !== false) {
-        _this.controller.removeMediaItem(itemId);
-        _this.props.onRemove && _this.props.onRemove([item], _this.controller.getItems());
-      }
-
-      event.stopPropagation();
-    };
-
-    _this.selectAllItems = function () {
-
-      var allItems = _this.controller.getItems();
-
-      if (!_this.props.onBeforeSelect || _this.props.onBeforeSelect(allItems, allItems) !== false) {
-        _this.controller.selectAllItems();
-        _this.props.onSelect && _this.props.onSelect(allItems, allItems);
-      }
-    };
-
-    _this.deselectAllItems = function () {
-
-      var allItems = _this.controller.getItems();
-
-      if (!_this.props.onBeforeDeselect || _this.props.onBeforeDeselect(allItems, allItems) !== false) {
-        _this.controller.deselectAllItems();
-        _this.props.onDeselect && _this.props.onDeselect(allItems, allItems);
-      }
-    };
-
-    _this.removeSelectedItems = function () {
-
-      var selectedItems = _this.controller.getSelectedItems();
-
-      if (!_this.props.onBeforeRemove || _this.props.onBeforeRemove(selectedItems, _this.controller.getItems()) !== false) {
-        _this.controller.removeSelectedItems();
-        _this.props.onRemove && _this.props.onRemove(selectedItems, _this.controller.getItems());
-      }
-    };
-
-    _this.handleDragLeave = function (event) {
-      event.preventDefault();
-      _this.dragCounter--;
-      _this.dragCounter === 0 && _this.setState({
-        draging: false
-      });
-    };
-
-    _this.handleDragDrop = function (event) {
-      event.preventDefault();
-      _this.dragCounter = 0;
-      _this.setState({ draging: false });
-      _this.reslovePickedFiles(event);
-    };
-
-    _this.handleDragEnter = function (event) {
-      event.preventDefault();
-      _this.dragCounter++;
-      _this.setState({ draging: true });
-    };
-
-    _this.reslovePickedFiles = function (event) {
-
-      event.persist();
-
-      var _ref = event.type === 'drop' ? event.dataTransfer : event.target,
-          files = _ref.files;
-
-      if (_this.props.onFileSelect) {
-        var result = _this.props.onFileSelect(files);
-        if (result === false) {
-          return false;
-        } else if (result instanceof FileList || result instanceof Array) {
-          files = result;
-        }
-      }
-
-      var accepts = _extends({}, defaultAccepts, _this.props.accepts);
-
-      _this.controller.resolveFiles({
-        files: files,
-        onItemReady: function onItemReady(_ref2) {
-          var id = _ref2.id;
-          return _this.controller.selectMediaItem(id);
-        },
-        onAllReady: function onAllReady() {
-          return event.target.value = null;
-        }
-      }, 0, accepts);
-    };
-
-    _this.inputExternal = function (event) {
-      _this.setState({
-        external: _extends({}, _this.state.external, {
-          url: event.target.value
-        })
-      });
-    };
-
-    _this.switchExternalType = function (event) {
-      _this.setState({
-        external: _extends({}, _this.state.external, { type: event.target.dataset.type })
-      });
-    };
-
-    _this.confirmAddExternal = function (event) {
-
-      if (event.target.nodeName.toLowerCase() === 'button' || event.keyCode === 13) {
-        var _this$state$external = _this.state.external,
-            url = _this$state$external.url,
-            type = _this$state$external.type;
-
-        url = url.split('|');
-        var name = url.length > 1 ? url[0] : _this.props.language.unnamedItem;
-        url = url.length > 1 ? url[1] : url[0];
-        var thumbnail = type === 'IMAGE' ? url : null;
-
-        _this.controller.addItems([{
-          thumbnail: thumbnail, url: url, name: name, type: type,
-          id: new Date().getTime() + '_' + (0, _base.UniqueIndex)(),
-          uploading: false,
-          uploadProgress: 1,
-          selected: true
-        }]);
-
-        _this.setState({
-          showExternalForm: false,
-          external: {
-            url: '',
-            type: 'IMAGE'
-          }
+    image.onload = function () {
+      try {
+        var compressCanvas = document.createElement('canvas');
+        var scale = this.width > width || this.height > height ? this.width > this.height ? width / this.width : height / this.height : 1;
+        compressCanvas.width = this.width * scale;
+        compressCanvas.height = this.height * scale;
+        var canvasContext = compressCanvas.getContext('2d');
+        canvasContext.drawImage(this, 0, 0, compressCanvas.width, compressCanvas.height);
+        resolve({
+          url: compressCanvas.toDataURL('image/png', 1),
+          width: compressCanvas.width,
+          height: compressCanvas.height
         });
+      } catch (error) {
+        reject(error);
       }
     };
-
-    _this.toggleExternalForm = function () {
-      _this.setState({
-        showExternalForm: !_this.state.showExternalForm
-      });
-    };
-
-    _this.cancelInsert = function () {
-      _this.props.onCancel && _this.props.onCancel();
-    };
-
-    _this.confirmInsert = function () {
-
-      var selectedItems = _this.controller.getSelectedItems();
-
-      if (_this.props.onBeforeInsert) {
-
-        var filteredItems = _this.props.onBeforeInsert(selectedItems);
-
-        if (filteredItems && filteredItems instanceof Array) {
-          _this.controller.deselectAllItems();
-          _this.props.onInsert && _this.props.onInsert(filteredItems);
-        } else if (filteredItems !== false) {
-          _this.controller.deselectAllItems();
-          _this.props.onInsert && _this.props.onInsert(selectedItems);
-        }
-      } else {
-        _this.controller.deselectAllItems();
-        _this.props.onInsert && _this.props.onInsert(selectedItems);
-      }
-    };
-
-    _this.dragCounter = 0;
-    _this.controller = _this.props.controller;
-    var initialItems = _this.controller.getItems();
-
-    _this.state = {
-      draging: false,
-      error: false,
-      confirmable: initialItems.find(function (_ref3) {
-        var selected = _ref3.selected;
-        return selected;
-      }),
-      external: {
-        url: '',
-        type: 'IMAGE'
-      },
-      fileAccept: '',
-      showExternalForm: false,
-      allowExternal: false,
-      items: initialItems
-    };
-
-    _this.changeListenerId = _this.controller.onChange(function (items) {
-      _this.setState({ items: items, confirmable: items.find(function (_ref4) {
-          var selected = _ref4.selected;
-          return selected;
-        }) });
-      _this.props.onChange && _this.props.onChange(items);
-    });
-
-    return _this;
-  }
-
-  _createClass(BraftFinderView, [{
-    key: 'mapPropsToState',
-    value: function mapPropsToState(props) {
-      var accepts = props.accepts,
-          externals = props.externals;
-
-
-      accepts = _extends({}, defaultAccepts, accepts);
-
-      var fileAccept = !accepts ? [defaultAccepts.image, defaultAccepts.video, defaultAccepts.audio].join(',') : [accepts.image, accepts.video, accepts.audio].filter(function (item) {
-        return item;
-      }).join(',');
-
-      var external = {
-        url: '',
-        type: externals.image ? 'IMAGE' : externals.audio ? 'AUDIO' : externals.video ? 'VIDEO' : externals.embed ? 'EMBED' : ''
-      };
-
-      return {
-        fileAccept: fileAccept,
-        external: external,
-        allowExternal: externals && (externals.image || externals.audio || externals.video || externals.embed)
-      };
-    }
-  }, {
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      this.setState(this.mapPropsToState(this.props));
-    }
-  }, {
-    key: 'componentWillReceiveProps',
-    value: function componentWillReceiveProps(nextProps) {
-      this.setState(this.mapPropsToState(nextProps));
-    }
-  }, {
-    key: 'componentWillUnmount',
-    value: function componentWillUnmount() {
-      this.controller.offChange(this.changeListenerId);
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _props = this.props,
-          language = _props.language,
-          externals = _props.externals;
-      var _state = this.state,
-          items = _state.items,
-          draging = _state.draging,
-          confirmable = _state.confirmable,
-          fileAccept = _state.fileAccept,
-          external = _state.external,
-          showExternalForm = _state.showExternalForm,
-          allowExternal = _state.allowExternal;
-
-
-      return _react2.default.createElement(
-        'div',
-        { className: 'braft-finder' },
-        _react2.default.createElement(
-          'div',
-          {
-            onDragEnter: this.handleDragEnter,
-            onDragLeave: this.handleDragLeave,
-            onDrop: this.handleDragDrop,
-            className: 'bf-uploader'
-          },
-          _react2.default.createElement(
-            'div',
-            { className: "bf-drag-uploader " + (draging || !items.length ? 'active ' : ' ') + (draging ? 'draging' : '') },
-            _react2.default.createElement(
-              'span',
-              { className: 'bf-drag-tip' },
-              _react2.default.createElement('input', { accept: fileAccept, onChange: this.reslovePickedFiles, multiple: true, type: 'file' }),
-              draging ? language.dropTip : language.dragTip
-            )
-          ),
-          items.length ? _react2.default.createElement(
-            'div',
-            { className: 'bf-list-wrap' },
-            _react2.default.createElement(
-              'div',
-              { className: 'bf-list-tools' },
-              _react2.default.createElement(
-                'span',
-                { onClick: this.selectAllItems, className: 'bf-select-all' },
-                _react2.default.createElement('i', { className: 'braft-icon-done' }),
-                ' ',
-                language.selectAll
-              ),
-              _react2.default.createElement(
-                'span',
-                { onClick: this.deselectAllItems, disabled: !confirmable, className: 'bf-deselect-all' },
-                _react2.default.createElement('i', { className: 'braft-icon-close' }),
-                ' ',
-                language.deselect
-              ),
-              _react2.default.createElement(
-                'span',
-                { onClick: this.removeSelectedItems, disabled: !confirmable, className: 'bf-remove-selected' },
-                _react2.default.createElement('i', { className: 'braft-icon-bin' }),
-                ' ',
-                language.removeSelected
-              )
-            ),
-            this.buildItemList()
-          ) : null,
-          showExternalForm && allowExternal ? _react2.default.createElement(
-            'div',
-            { className: 'bf-add-external' },
-            _react2.default.createElement(
-              'div',
-              { className: 'bf-external-form' },
-              _react2.default.createElement(
-                'div',
-                { className: 'bf-external-input' },
-                _react2.default.createElement(
-                  'div',
-                  null,
-                  _react2.default.createElement('input', { onKeyDown: this.confirmAddExternal, value: external.url, onChange: this.inputExternal, placeholder: language.externalInputPlaceHolder })
-                ),
-                _react2.default.createElement(
-                  'button',
-                  { type: 'button', onClick: this.confirmAddExternal, disabled: !external.url.trim().length },
-                  language.confirm
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { 'data-type': external.type, className: 'bf-switch-external-type' },
-                externals.image ? _react2.default.createElement(
-                  'button',
-                  { type: 'button', onClick: this.switchExternalType, 'data-type': 'IMAGE' },
-                  language.image
-                ) : null,
-                externals.audio ? _react2.default.createElement(
-                  'button',
-                  { type: 'button', onClick: this.switchExternalType, 'data-type': 'AUDIO' },
-                  language.audio
-                ) : null,
-                externals.video ? _react2.default.createElement(
-                  'button',
-                  { type: 'button', onClick: this.switchExternalType, 'data-type': 'VIDEO' },
-                  language.video
-                ) : null,
-                externals.embed ? _react2.default.createElement(
-                  'button',
-                  { type: 'button', onClick: this.switchExternalType, 'data-type': 'EMBED' },
-                  language.embed
-                ) : null
-              ),
-              _react2.default.createElement(
-                'span',
-                { className: 'bf-external-tip' },
-                language.externalInputTip
-              )
-            )
-          ) : null
-        ),
-        _react2.default.createElement(
-          'footer',
-          { className: 'bf-manager-footer' },
-          _react2.default.createElement(
-            'div',
-            { className: 'pull-left' },
-            allowExternal ? _react2.default.createElement(
-              'span',
-              {
-                onClick: this.toggleExternalForm,
-                className: 'bf-toggle-external-form'
-              },
-              showExternalForm ? _react2.default.createElement(
-                'span',
-                { className: 'bf-bottom-text' },
-                _react2.default.createElement('i', { className: 'braft-icon-add' }),
-                ' ',
-                language.addLocalFile
-              ) : _react2.default.createElement(
-                'span',
-                { className: 'bf-bottom-text' },
-                _react2.default.createElement('i', { className: 'braft-icon-add' }),
-                ' ',
-                language.addExternalSource
-              )
-            ) : null
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'pull-right' },
-            _react2.default.createElement(
-              'button',
-              { onClick: this.confirmInsert, className: 'button button-insert', disabled: !confirmable },
-              language.insert
-            ),
-            _react2.default.createElement(
-              'button',
-              { onClick: this.cancelInsert, className: 'button button-cancel' },
-              language.cancel
-            )
-          )
-        )
-      );
-    }
-  }, {
-    key: 'buildItemList',
-    value: function buildItemList() {
-      var _this2 = this;
-
-      return _react2.default.createElement(
-        'ul',
-        { className: 'bf-list' },
-        _react2.default.createElement(
-          'li',
-          { className: 'bf-add-item' },
-          _react2.default.createElement('i', { className: 'braft-icon-add' }),
-          _react2.default.createElement('input', { accept: this.state.fileAccept, onChange: this.reslovePickedFiles, multiple: true, type: 'file' })
-        ),
-        this.state.items.map(function (item, index) {
-
-          var previewerComponents = null;
-          var progressMarker = item.uploading && !_this2.props.hideProgress ? _react2.default.createElement(
-            'div',
-            { className: 'bf-item-uploading' },
-            _react2.default.createElement('div', { className: 'bf-item-uploading-bar', style: { width: item.uploadProgress / 1 + '%' } })
-          ) : '';
-
-          switch (item.type) {
-            case 'IMAGE':
-              previewerComponents = _react2.default.createElement(
-                'div',
-                { className: 'bf-image' },
-                progressMarker,
-                _react2.default.createElement('img', { src: item.thumbnail || item.url })
-              );
-              break;
-            case 'VIDEO':
-              previewerComponents = _react2.default.createElement(
-                'div',
-                { className: 'bf-icon bf-video', title: item.url },
-                progressMarker,
-                _react2.default.createElement('i', { className: 'braft-icon-film' }),
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  item.name || item.url
-                )
-              );
-              break;
-            case 'AUDIO':
-              previewerComponents = _react2.default.createElement(
-                'div',
-                { className: 'bf-icon bf-audio', title: item.url },
-                progressMarker,
-                _react2.default.createElement('i', { className: 'braft-icon-music' }),
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  item.name || item.url
-                )
-              );
-              break;
-            case 'EMBED':
-              previewerComponents = _react2.default.createElement(
-                'div',
-                { className: 'bf-icon bf-embed', title: item.url },
-                progressMarker,
-                _react2.default.createElement('i', { className: 'braft-icon-code' }),
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  item.name || _this2.props.language.embed
-                )
-              );
-              break;
-            default:
-              previewerComponents = _react2.default.createElement(
-                'a',
-                { className: 'bf-icon bf-file', title: item.url, href: item.url },
-                progressMarker,
-                _react2.default.createElement('i', { className: 'braft-icon-file-text' }),
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  item.name || item.url
-                )
-              );
-              break;
-          }
-
-          var className = ['bf-item'];
-          item.selected && className.push('active');
-          item.uploading && className.push('uploading');
-          item.error && className.push('error');
-
-          return _react2.default.createElement(
-            'li',
-            {
-              key: index,
-              title: item.name,
-              'data-id': item.id,
-              className: className.join(' '),
-              onClick: _this2.toggleSelectItem
-            },
-            previewerComponents,
-            _react2.default.createElement('span', { 'data-id': item.id, onClick: _this2.removeItem, className: 'bf-item-remove braft-icon-close' }),
-            _react2.default.createElement(
-              'span',
-              { className: 'bf-item-title' },
-              item.name
-            )
-          );
-        })
-      );
-    }
-  }]);
-
-  return BraftFinderView;
-}(_react2.default.Component);
-
-BraftFinderView.defaultProps = {
-  accepts: defaultAccepts,
-  externals: {
-    image: true,
-    video: true,
-    audio: true,
-    embed: true
-  }
+  });
 };
-exports.default = BraftFinderView;
-
-/***/ }),
-/* 20 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _base = __webpack_require__(1);
-
-var _image = __webpack_require__(0);
-
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
+;// CONCATENATED MODULE: ./controller.js
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+
 
 var defaultValidator = function defaultValidator() {
   return true;
 };
-
-var BraftFinderController = function BraftFinderController() {
-  var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-  _classCallCheck(this, BraftFinderController);
-
-  _initialiseProps.call(this);
-
-  this.items = props.items || [];
-  this.uploadFn = props.uploader;
-  this.validateFn = props.validator || defaultValidator;
-
-  this.changeListeners = [];
-}
-
-// resolvePastedFiles ({ clipboardData }, callback) {
-
-//   if (clipboardData && clipboardData.items && clipboardData.items[0].type.indexOf('image') > -1) {
-//     this.uploadImage(clipboardData.items[0].getAsFile(), callback)
-//   }
-
-// }
-
-;
-
-var _initialiseProps = function _initialiseProps() {
+var BraftFinderController = /*#__PURE__*/_createClass(function BraftFinderController() {
   var _this = this;
-
-  this.setProps = function () {
+  var _props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  _classCallCheck(this, BraftFinderController);
+  _defineProperty(this, "setProps", function () {
     var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-
     _this.items = props.items || _this.items || [];
     _this.uploadFn = props.uploader;
     _this.validateFn = props.validator || defaultValidator;
-  };
-
-  this.getMediaItem = function (id) {
+  });
+  _defineProperty(this, "getMediaItem", function (id) {
     return _this.items.find(function (item) {
       return item.id === id;
     });
-  };
-
-  this.getSelectedItems = function () {
+  });
+  _defineProperty(this, "getSelectedItems", function () {
     return _this.items.filter(function (item) {
       return item.selected;
     });
-  };
-
-  this.getItems = function () {
+  });
+  _defineProperty(this, "getItems", function () {
     return _this.items;
-  };
-
-  this.setItems = function (items) {
+  });
+  _defineProperty(this, "setItems", function (items) {
     _this.items = items.map(function (item) {
-      return _extends({}, item, { id: item.id.toString() });
+      return _objectSpread(_objectSpread({}, item), {}, {
+        id: item.id.toString()
+      });
     }) || [];
     _this.applyChange();
     _this.uploadItems();
-  };
-
-  this.addMediaItem = function (item) {
+  });
+  _defineProperty(this, "addMediaItem", function (item) {
     _this.addItems([item]);
-  };
-
-  this.addItems = function (items) {
+  });
+  _defineProperty(this, "addItems", function (items) {
     _this.items = [].concat(_toConsumableArray(_this.items), _toConsumableArray(items.map(function (item) {
-      return _extends({}, item, { id: item.id.toString() });
+      return _objectSpread(_objectSpread({}, item), {}, {
+        id: item.id.toString()
+      });
     })));
     _this.applyChange();
     _this.uploadItems();
-  };
-
-  this.selectMediaItem = function (id) {
+  });
+  _defineProperty(this, "selectMediaItem", function (id) {
     var item = _this.getMediaItem(id);
     if (item && (item.uploading || item.error)) {
       return false;
@@ -1846,104 +938,91 @@ var _initialiseProps = function _initialiseProps() {
     _this.setMediaItemState(id, {
       selected: true
     });
-  };
-
-  this.selectAllItems = function () {
+  });
+  _defineProperty(this, "selectAllItems", function () {
     _this.items = _this.items.filter(function (item) {
       return !item.error && !item.uploading;
     }).map(function (item) {
-      return _extends({}, item, { selected: true });
+      return _objectSpread(_objectSpread({}, item), {}, {
+        selected: true
+      });
     });
     _this.applyChange();
-  };
-
-  this.deselectMediaItem = function (id) {
+  });
+  _defineProperty(this, "deselectMediaItem", function (id) {
     _this.setMediaItemState(id, {
       selected: false
     });
-  };
-
-  this.deselectAllItems = function () {
+  });
+  _defineProperty(this, "deselectAllItems", function () {
     _this.items = _this.items.map(function (item) {
-      return _extends({}, item, { selected: false });
+      return _objectSpread(_objectSpread({}, item), {}, {
+        selected: false
+      });
     });
     _this.applyChange();
-  };
-
-  this.removeMediaItem = function (id) {
+  });
+  _defineProperty(this, "removeMediaItem", function (id) {
     _this.items = _this.items.filter(function (item) {
       return item.id !== id;
     });
     _this.applyChange();
-  };
-
-  this.removeItems = function () {
+  });
+  _defineProperty(this, "removeItems", function () {
     var ids = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-
     _this.items = _this.items.filter(function (item) {
       return !ids.includes(item.id);
     });
     _this.applyChange();
-  };
-
-  this.removeSelectedItems = function () {
+  });
+  _defineProperty(this, "removeSelectedItems", function () {
     _this.items = _this.items.filter(function (item) {
       return !item.selected;
     });
     _this.applyChange();
-  };
-
-  this.removeErrorItems = function () {
+  });
+  _defineProperty(this, "removeErrorItems", function () {
     _this.items = _this.items.filter(function (item) {
       return !item.error;
     });
     _this.applyChange();
-  };
-
-  this.removeAllItems = function () {
+  });
+  _defineProperty(this, "removeAllItems", function () {
     _this.items = [];
     _this.applyChange();
-  };
-
-  this.setMediaItemState = function (id, state) {
+  });
+  _defineProperty(this, "setMediaItemState", function (id, state) {
     _this.items = _this.items.map(function (item) {
-      return item.id === id ? _extends({}, item, state) : item;
+      return item.id === id ? _objectSpread(_objectSpread({}, item), state) : item;
     });
     _this.applyChange();
-  };
-
-  this.reuploadErrorItems = function () {
+  });
+  _defineProperty(this, "reuploadErrorItems", function () {
     _this.uploadItems(true);
-  };
-
-  this.uploadItems = function () {
+  });
+  _defineProperty(this, "uploadItems", function () {
     var ignoreError = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-
-
     _this.items.forEach(function (item, index) {
-
       if (item.uploading || item.url) {
         return false;
       }
-
       if (!ignoreError && item.error) {
         return false;
       }
-
       if (item.type === 'IMAGE') {
         _this.createThumbnail(item);
         _this.uploadFn = _this.uploadFn || _this.createInlineImage;
       } else if (!_this.uploadFn) {
-        _this.setMediaItemState(item.id, { error: 1 });
+        _this.setMediaItemState(item.id, {
+          error: 1
+        });
         return false;
       }
-
       _this.setMediaItemState(item.id, {
         uploading: true,
         uploadProgress: 0,
         error: 0
       });
-
       _this.uploadFn({
         id: item.id,
         file: item.file,
@@ -1964,51 +1043,43 @@ var _initialiseProps = function _initialiseProps() {
         }
       });
     });
-  };
-
-  this.createThumbnail = function (_ref) {
+  });
+  _defineProperty(this, "createThumbnail", function (_ref) {
     var id = _ref.id,
-        file = _ref.file;
-
-
-    (0, _image.compressImage)(URL.createObjectURL(file), 226, 226).then(function (result) {
-      _this.setMediaItemState(id, { thumbnail: result.url });
+      file = _ref.file;
+    compressImage(URL.createObjectURL(file), 226, 226).then(function (result) {
+      _this.setMediaItemState(id, {
+        thumbnail: result.url
+      });
     });
-  };
-
-  this.createInlineImage = function (param) {
-
-    (0, _image.compressImage)(URL.createObjectURL(param.file), 1280, 800).then(function (result) {
-      param.success({ url: result.url });
-    }).catch(function (error) {
+  });
+  _defineProperty(this, "createInlineImage", function (param) {
+    compressImage(URL.createObjectURL(param.file), 1280, 800).then(function (result) {
+      param.success({
+        url: result.url
+      });
+    })["catch"](function (error) {
       param.error(error);
     });
-  };
-
-  this.handleUploadSuccess = function (id, data) {
-
-    _this.setMediaItemState(id, _extends({}, data, {
+  });
+  _defineProperty(this, "handleUploadSuccess", function (id, data) {
+    _this.setMediaItemState(id, _objectSpread(_objectSpread({}, data), {}, {
       file: null,
       uploadProgress: 1,
       uploading: false,
       selected: false
     }));
-
     var item = _this.getMediaItem(data.id || id);
     item.onReady && item.onReady(item);
-  };
-
-  this.applyChange = function () {
+  });
+  _defineProperty(this, "applyChange", function () {
     _this.changeListeners.forEach(function (_ref2) {
       var callback = _ref2.callback;
       return callback(_this.items);
     });
-  };
-
-  this.uploadImage = function (file, callback) {
-
-    var fileId = new Date().getTime() + '_' + (0, _base.UniqueIndex)();
-
+  });
+  _defineProperty(this, "uploadImage", function (file, callback) {
+    var fileId = new Date().getTime() + '_' + UniqueIndex();
     _this.addMediaItem({
       type: 'IMAGE',
       id: fileId,
@@ -2021,12 +1092,9 @@ var _initialiseProps = function _initialiseProps() {
       error: 0,
       onReady: callback
     });
-  };
-
-  this.uploadImageRecursively = function (files, callback) {
+  });
+  _defineProperty(this, "uploadImageRecursively", function (files, callback) {
     var index = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
-
-
     if (files[index] && files[index].type.indexOf('image') > -1) {
       _this.uploadImage(files[index], function (image) {
         callback && callback(image);
@@ -2035,12 +1103,10 @@ var _initialiseProps = function _initialiseProps() {
     } else {
       index < files.length - 1 && _this.uploadImageRecursively(files, callback, index + 1);
     }
-  };
-
-  this.addResolvedFiles = function (param, index, accepts) {
-
+  });
+  _defineProperty(this, "addResolvedFiles", function (param, index, accepts) {
     var data = {
-      id: new Date().getTime() + '_' + (0, _base.UniqueIndex)(),
+      id: new Date().getTime() + '_' + UniqueIndex(),
       file: param.files[index],
       name: param.files[index].name,
       size: param.files[index].size,
@@ -2052,7 +1118,6 @@ var _initialiseProps = function _initialiseProps() {
         param.onItemReady && param.onItemReady(item);
       }
     };
-
     if (param.files[index].type.indexOf('image/') === 0 && accepts.image) {
       data.type = 'IMAGE';
       _this.addMediaItem(data);
@@ -2063,18 +1128,13 @@ var _initialiseProps = function _initialiseProps() {
       data.type = 'AUDIO';
       _this.addMediaItem(data);
     }
-
     setTimeout(function () {
       _this.resolveFiles(param, index + 1, accepts);
     }, 60);
-  };
-
-  this.resolveFiles = function (param, index, accepts) {
-
+  });
+  _defineProperty(this, "resolveFiles", function (param, index, accepts) {
     if (index < param.files.length) {
-
       var validateResult = _this.validateFn(param.files[index]);
-
       if (validateResult instanceof Promise) {
         validateResult.then(function () {
           _this.addResolvedFiles(param, index, accepts);
@@ -2085,112 +1145,774 @@ var _initialiseProps = function _initialiseProps() {
     } else {
       param.onAllReady && param.onAllReady();
     }
-  };
-
-  this.onChange = function (callback) {
-
-    var listenerId = (0, _base.UniqueIndex)();
-
+  });
+  // resolvePastedFiles ({ clipboardData }, callback) {
+  //   if (clipboardData && clipboardData.items && clipboardData.items[0].type.indexOf('image') > -1) {
+  //     this.uploadImage(clipboardData.items[0].getAsFile(), callback)
+  //   }
+  // }
+  _defineProperty(this, "onChange", function (callback) {
+    var listenerId = UniqueIndex();
     _this.changeListeners.push({
       id: listenerId,
       callback: callback
     });
-
     return listenerId;
-  };
-
-  this.offChange = function (listenerId) {
+  });
+  _defineProperty(this, "offChange", function (listenerId) {
     _this.changeListeners = _this.changeListeners.filter(function (_ref3) {
       var id = _ref3.id;
       return id !== listenerId;
     });
+  });
+  this.items = _props.items || [];
+  this.uploadFn = _props.uploader;
+  this.validateFn = _props.validator || defaultValidator;
+  this.changeListeners = [];
+});
+
+// EXTERNAL MODULE: ./styles.scss
+var styles = __webpack_require__(316);
+;// CONCATENATED MODULE: ./view.jsx
+function view_typeof(obj) { "@babel/helpers - typeof"; return view_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, view_typeof(obj); }
+function view_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function view_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, view_toPropertyKey(descriptor.key), descriptor); } }
+function view_createClass(Constructor, protoProps, staticProps) { if (protoProps) view_defineProperties(Constructor.prototype, protoProps); if (staticProps) view_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _possibleConstructorReturn(self, call) { if (call && (view_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+function view_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function view_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? view_ownKeys(Object(source), !0).forEach(function (key) { view_defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : view_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+function view_defineProperty(obj, key, value) { key = view_toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function view_toPropertyKey(arg) { var key = view_toPrimitive(arg, "string"); return view_typeof(key) === "symbol" ? key : String(key); }
+function view_toPrimitive(input, hint) { if (view_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (view_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+
+
+
+var defaultAccepts = {
+  image: 'image/png,image/jpeg,image/gif,image/webp,image/apng,image/svg',
+  video: 'video/mp4',
+  audio: 'audio/mp3'
+};
+var mapPropsToState = function mapPropsToState(props) {
+  var accepts = props.accepts,
+    externals = props.externals;
+  accepts = view_objectSpread(view_objectSpread({}, defaultAccepts), accepts);
+  var fileAccept = !accepts ? [defaultAccepts.image, defaultAccepts.video, defaultAccepts.audio].join(',') : [accepts.image, accepts.video, accepts.audio].filter(function (item) {
+    return item;
+  }).join(',');
+  var external = {
+    url: '',
+    type: externals.image ? 'IMAGE' : externals.audio ? 'AUDIO' : externals.video ? 'VIDEO' : externals.embed ? 'EMBED' : ''
+  };
+  return {
+    fileAccept: fileAccept,
+    external: external,
+    allowExternal: externals && (externals.image || externals.audio || externals.video || externals.embed),
+    propsStr: JSON.stringify(props)
   };
 };
-
-exports.default = BraftFinderController;
-
-/***/ }),
-/* 21 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.ImageUtils = undefined;
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _react = __webpack_require__(2);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _controller = __webpack_require__(20);
-
-var _controller2 = _interopRequireDefault(_controller);
-
-var _view = __webpack_require__(19);
-
-var _view2 = _interopRequireDefault(_view);
-
-var _languages = __webpack_require__(11);
-
-var _languages2 = _interopRequireDefault(_languages);
-
-var _image = __webpack_require__(0);
-
-var ImageUtils = _interopRequireWildcard(_image);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var BraftFinder = function (_FinderController) {
-  _inherits(BraftFinder, _FinderController);
-
-  function BraftFinder(props) {
-    _classCallCheck(this, BraftFinder);
-
-    var _this = _possibleConstructorReturn(this, (BraftFinder.__proto__ || Object.getPrototypeOf(BraftFinder)).call(this, props));
-
-    _initialiseProps.call(_this);
-
-    _this.superProps = props;
+var BraftFinderView = /*#__PURE__*/function (_React$Component) {
+  _inherits(BraftFinderView, _React$Component);
+  var _super = _createSuper(BraftFinderView);
+  function BraftFinderView(props) {
+    var _this;
+    view_classCallCheck(this, BraftFinderView);
+    _this = _super.call(this, props);
+    view_defineProperty(_assertThisInitialized(_this), "toggleSelectItem", function (event) {
+      var itemId = event.currentTarget.dataset.id;
+      var item = _this.controller.getMediaItem(itemId);
+      if (!item) {
+        return false;
+      }
+      if (item.selected) {
+        if (!_this.props.onBeforeDeselect || _this.props.onBeforeDeselect([item], _this.controller.getItems()) !== false) {
+          _this.controller.deselectMediaItem(itemId);
+          _this.props.onDeselect && _this.props.onDeselect([item], _this.controller.getItems());
+        }
+      } else {
+        if (!_this.props.onBeforeSelect || _this.props.onBeforeSelect([item], _this.controller.getItems()) !== false) {
+          _this.controller.selectMediaItem(itemId);
+          _this.props.onSelect && _this.props.onSelect([item], _this.controller.getItems());
+        }
+      }
+    });
+    view_defineProperty(_assertThisInitialized(_this), "removeItem", function (event) {
+      var itemId = event.currentTarget.dataset.id;
+      var item = _this.controller.getMediaItem(itemId);
+      if (!item) {
+        return false;
+      }
+      if (!_this.props.onBeforeRemove || _this.props.onBeforeRemove([item], _this.controller.getItems()) !== false) {
+        _this.controller.removeMediaItem(itemId);
+        _this.props.onRemove && _this.props.onRemove([item], _this.controller.getItems());
+      }
+      event.stopPropagation();
+    });
+    view_defineProperty(_assertThisInitialized(_this), "selectAllItems", function () {
+      var allItems = _this.controller.getItems();
+      if (!_this.props.onBeforeSelect || _this.props.onBeforeSelect(allItems, allItems) !== false) {
+        _this.controller.selectAllItems();
+        _this.props.onSelect && _this.props.onSelect(allItems, allItems);
+      }
+    });
+    view_defineProperty(_assertThisInitialized(_this), "deselectAllItems", function () {
+      var allItems = _this.controller.getItems();
+      if (!_this.props.onBeforeDeselect || _this.props.onBeforeDeselect(allItems, allItems) !== false) {
+        _this.controller.deselectAllItems();
+        _this.props.onDeselect && _this.props.onDeselect(allItems, allItems);
+      }
+    });
+    view_defineProperty(_assertThisInitialized(_this), "removeSelectedItems", function () {
+      var selectedItems = _this.controller.getSelectedItems();
+      if (!_this.props.onBeforeRemove || _this.props.onBeforeRemove(selectedItems, _this.controller.getItems()) !== false) {
+        _this.controller.removeSelectedItems();
+        _this.props.onRemove && _this.props.onRemove(selectedItems, _this.controller.getItems());
+      }
+    });
+    view_defineProperty(_assertThisInitialized(_this), "handleDragLeave", function (event) {
+      event.preventDefault();
+      _this.dragCounter--;
+      _this.dragCounter === 0 && _this.setState({
+        draging: false
+      });
+    });
+    view_defineProperty(_assertThisInitialized(_this), "handleDragDrop", function (event) {
+      event.preventDefault();
+      _this.dragCounter = 0;
+      _this.setState({
+        draging: false
+      });
+      _this.reslovePickedFiles(event);
+    });
+    view_defineProperty(_assertThisInitialized(_this), "handleDragEnter", function (event) {
+      event.preventDefault();
+      _this.dragCounter++;
+      _this.setState({
+        draging: true
+      });
+    });
+    view_defineProperty(_assertThisInitialized(_this), "reslovePickedFiles", function (event) {
+      event.persist();
+      var _ref = event.type === 'drop' ? event.dataTransfer : event.target,
+        files = _ref.files;
+      if (_this.props.onFileSelect) {
+        var result = _this.props.onFileSelect(files);
+        if (result === false) {
+          return false;
+        } else if (result instanceof FileList || result instanceof Array) {
+          files = result;
+        }
+      }
+      var accepts = view_objectSpread(view_objectSpread({}, defaultAccepts), _this.props.accepts);
+      _this.controller.resolveFiles({
+        files: files,
+        onItemReady: function onItemReady(_ref2) {
+          var id = _ref2.id;
+          return _this.controller.selectMediaItem(id);
+        },
+        onAllReady: function onAllReady() {
+          return event.target.value = null;
+        }
+      }, 0, accepts);
+    });
+    view_defineProperty(_assertThisInitialized(_this), "inputExternal", function (event) {
+      _this.setState({
+        external: view_objectSpread(view_objectSpread({}, _this.state.external), {}, {
+          url: event.target.value
+        })
+      });
+    });
+    view_defineProperty(_assertThisInitialized(_this), "switchExternalType", function (event) {
+      _this.setState({
+        external: view_objectSpread(view_objectSpread({}, _this.state.external), {}, {
+          type: event.target.dataset.type
+        })
+      });
+    });
+    view_defineProperty(_assertThisInitialized(_this), "confirmAddExternal", function (event) {
+      if (event.target.nodeName.toLowerCase() === 'button' || event.keyCode === 13) {
+        var _this$state$external = _this.state.external,
+          url = _this$state$external.url,
+          type = _this$state$external.type;
+        url = url.split('|');
+        var name = url.length > 1 ? url[0] : _this.props.language.unnamedItem;
+        url = url.length > 1 ? url[1] : url[0];
+        var thumbnail = type === 'IMAGE' ? url : null;
+        _this.controller.addItems([{
+          thumbnail: thumbnail,
+          url: url,
+          name: name,
+          type: type,
+          id: new Date().getTime() + '_' + UniqueIndex(),
+          uploading: false,
+          uploadProgress: 1,
+          selected: true
+        }]);
+        _this.setState({
+          showExternalForm: false,
+          external: {
+            url: '',
+            type: 'IMAGE'
+          }
+        });
+      }
+    });
+    view_defineProperty(_assertThisInitialized(_this), "toggleExternalForm", function () {
+      _this.setState({
+        showExternalForm: !_this.state.showExternalForm
+      });
+    });
+    view_defineProperty(_assertThisInitialized(_this), "cancelInsert", function () {
+      _this.props.onCancel && _this.props.onCancel();
+    });
+    view_defineProperty(_assertThisInitialized(_this), "confirmInsert", function () {
+      var selectedItems = _this.controller.getSelectedItems();
+      if (_this.props.onBeforeInsert) {
+        var filteredItems = _this.props.onBeforeInsert(selectedItems);
+        if (filteredItems && filteredItems instanceof Array) {
+          _this.controller.deselectAllItems();
+          _this.props.onInsert && _this.props.onInsert(filteredItems);
+        } else if (filteredItems !== false) {
+          _this.controller.deselectAllItems();
+          _this.props.onInsert && _this.props.onInsert(selectedItems);
+        }
+      } else {
+        _this.controller.deselectAllItems();
+        _this.props.onInsert && _this.props.onInsert(selectedItems);
+      }
+    });
+    _this.dragCounter = 0;
+    _this.controller = _this.props.controller;
+    var initialItems = _this.controller.getItems();
+    _this.state = {
+      draging: false,
+      error: false,
+      confirmable: initialItems.find(function (_ref3) {
+        var selected = _ref3.selected;
+        return selected;
+      }),
+      external: {
+        url: '',
+        type: 'IMAGE'
+      },
+      fileAccept: '',
+      showExternalForm: false,
+      allowExternal: false,
+      items: initialItems
+    };
+    _this.changeListenerId = _this.controller.onChange(function (items) {
+      _this.setState({
+        items: items,
+        confirmable: items.find(function (_ref4) {
+          var selected = _ref4.selected;
+          return selected;
+        })
+      });
+      _this.props.onChange && _this.props.onChange(items);
+    });
     return _this;
   }
+  view_createClass(BraftFinderView, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.setState(mapPropsToState(this.props));
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      this.controller.offChange(this.changeListenerId);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+        language = _this$props.language,
+        externals = _this$props.externals;
+      var _this$state = this.state,
+        items = _this$state.items,
+        draging = _this$state.draging,
+        confirmable = _this$state.confirmable,
+        fileAccept = _this$state.fileAccept,
+        external = _this$state.external,
+        showExternalForm = _this$state.showExternalForm,
+        allowExternal = _this$state.allowExternal;
+      return /*#__PURE__*/external_react_default().createElement("div", {
+        className: "braft-finder"
+      }, /*#__PURE__*/external_react_default().createElement("div", {
+        onDragEnter: this.handleDragEnter,
+        onDragLeave: this.handleDragLeave,
+        onDrop: this.handleDragDrop,
+        className: "bf-uploader"
+      }, /*#__PURE__*/external_react_default().createElement("div", {
+        className: "bf-drag-uploader " + (draging || !items.length ? 'active ' : ' ') + (draging ? 'draging' : '')
+      }, /*#__PURE__*/external_react_default().createElement("span", {
+        className: "bf-drag-tip"
+      }, /*#__PURE__*/external_react_default().createElement("input", {
+        accept: fileAccept,
+        onChange: this.reslovePickedFiles,
+        multiple: true,
+        type: "file"
+      }), draging ? language.dropTip : language.dragTip)), items.length ? /*#__PURE__*/external_react_default().createElement("div", {
+        className: "bf-list-wrap"
+      }, /*#__PURE__*/external_react_default().createElement("div", {
+        className: "bf-list-tools"
+      }, /*#__PURE__*/external_react_default().createElement("span", {
+        onClick: this.selectAllItems,
+        className: "bf-select-all"
+      }, /*#__PURE__*/external_react_default().createElement("i", {
+        className: "braft-icon-done"
+      }), " ", language.selectAll), /*#__PURE__*/external_react_default().createElement("span", {
+        onClick: this.deselectAllItems,
+        disabled: !confirmable,
+        className: "bf-deselect-all"
+      }, /*#__PURE__*/external_react_default().createElement("i", {
+        className: "braft-icon-close"
+      }), " ", language.deselect), /*#__PURE__*/external_react_default().createElement("span", {
+        onClick: this.removeSelectedItems,
+        disabled: !confirmable,
+        className: "bf-remove-selected"
+      }, /*#__PURE__*/external_react_default().createElement("i", {
+        className: "braft-icon-bin"
+      }), " ", language.removeSelected)), this.buildItemList()) : null, showExternalForm && allowExternal ? /*#__PURE__*/external_react_default().createElement("div", {
+        className: "bf-add-external"
+      }, /*#__PURE__*/external_react_default().createElement("div", {
+        className: "bf-external-form"
+      }, /*#__PURE__*/external_react_default().createElement("div", {
+        className: "bf-external-input"
+      }, /*#__PURE__*/external_react_default().createElement("div", null, /*#__PURE__*/external_react_default().createElement("input", {
+        onKeyDown: this.confirmAddExternal,
+        value: external.url,
+        onChange: this.inputExternal,
+        placeholder: language.externalInputPlaceHolder
+      })), /*#__PURE__*/external_react_default().createElement("button", {
+        type: "button",
+        onClick: this.confirmAddExternal,
+        disabled: !external.url.trim().length
+      }, language.confirm)), /*#__PURE__*/external_react_default().createElement("div", {
+        "data-type": external.type,
+        className: "bf-switch-external-type"
+      }, externals.image ? /*#__PURE__*/external_react_default().createElement("button", {
+        type: "button",
+        onClick: this.switchExternalType,
+        "data-type": "IMAGE"
+      }, language.image) : null, externals.audio ? /*#__PURE__*/external_react_default().createElement("button", {
+        type: "button",
+        onClick: this.switchExternalType,
+        "data-type": "AUDIO"
+      }, language.audio) : null, externals.video ? /*#__PURE__*/external_react_default().createElement("button", {
+        type: "button",
+        onClick: this.switchExternalType,
+        "data-type": "VIDEO"
+      }, language.video) : null, externals.embed ? /*#__PURE__*/external_react_default().createElement("button", {
+        type: "button",
+        onClick: this.switchExternalType,
+        "data-type": "EMBED"
+      }, language.embed) : null), /*#__PURE__*/external_react_default().createElement("span", {
+        className: "bf-external-tip"
+      }, language.externalInputTip))) : null), /*#__PURE__*/external_react_default().createElement("footer", {
+        className: "bf-manager-footer"
+      }, /*#__PURE__*/external_react_default().createElement("div", {
+        className: "pull-left"
+      }, allowExternal ? /*#__PURE__*/external_react_default().createElement("span", {
+        onClick: this.toggleExternalForm,
+        className: "bf-toggle-external-form"
+      }, showExternalForm ? /*#__PURE__*/external_react_default().createElement("span", {
+        className: "bf-bottom-text"
+      }, /*#__PURE__*/external_react_default().createElement("i", {
+        className: "braft-icon-add"
+      }), " ", language.addLocalFile) : /*#__PURE__*/external_react_default().createElement("span", {
+        className: "bf-bottom-text"
+      }, /*#__PURE__*/external_react_default().createElement("i", {
+        className: "braft-icon-add"
+      }), " ", language.addExternalSource)) : null), /*#__PURE__*/external_react_default().createElement("div", {
+        className: "pull-right"
+      }, /*#__PURE__*/external_react_default().createElement("button", {
+        onClick: this.confirmInsert,
+        className: "button button-insert",
+        disabled: !confirmable
+      }, language.insert), /*#__PURE__*/external_react_default().createElement("button", {
+        onClick: this.cancelInsert,
+        className: "button button-cancel"
+      }, language.cancel))));
+    }
+  }, {
+    key: "buildItemList",
+    value: function buildItemList() {
+      var _this2 = this;
+      return /*#__PURE__*/external_react_default().createElement("ul", {
+        className: "bf-list"
+      }, /*#__PURE__*/external_react_default().createElement("li", {
+        className: "bf-add-item"
+      }, /*#__PURE__*/external_react_default().createElement("i", {
+        className: "braft-icon-add"
+      }), /*#__PURE__*/external_react_default().createElement("input", {
+        accept: this.state.fileAccept,
+        onChange: this.reslovePickedFiles,
+        multiple: true,
+        type: "file"
+      })), this.state.items.map(function (item, index) {
+        var previewerComponents = null;
+        var progressMarker = item.uploading && !_this2.props.hideProgress ? /*#__PURE__*/external_react_default().createElement("div", {
+          className: "bf-item-uploading"
+        }, /*#__PURE__*/external_react_default().createElement("div", {
+          className: "bf-item-uploading-bar",
+          style: {
+            width: item.uploadProgress / 1 + '%'
+          }
+        })) : '';
+        switch (item.type) {
+          case 'IMAGE':
+            previewerComponents = /*#__PURE__*/external_react_default().createElement("div", {
+              className: "bf-image"
+            }, progressMarker, /*#__PURE__*/external_react_default().createElement("img", {
+              src: item.thumbnail || item.url
+            }));
+            break;
+          case 'VIDEO':
+            previewerComponents = /*#__PURE__*/external_react_default().createElement("div", {
+              className: "bf-icon bf-video",
+              title: item.url
+            }, progressMarker, /*#__PURE__*/external_react_default().createElement("i", {
+              className: "braft-icon-film"
+            }), /*#__PURE__*/external_react_default().createElement("span", null, item.name || item.url));
+            break;
+          case 'AUDIO':
+            previewerComponents = /*#__PURE__*/external_react_default().createElement("div", {
+              className: "bf-icon bf-audio",
+              title: item.url
+            }, progressMarker, /*#__PURE__*/external_react_default().createElement("i", {
+              className: "braft-icon-music"
+            }), /*#__PURE__*/external_react_default().createElement("span", null, item.name || item.url));
+            break;
+          case 'EMBED':
+            previewerComponents = /*#__PURE__*/external_react_default().createElement("div", {
+              className: "bf-icon bf-embed",
+              title: item.url
+            }, progressMarker, /*#__PURE__*/external_react_default().createElement("i", {
+              className: "braft-icon-code"
+            }), /*#__PURE__*/external_react_default().createElement("span", null, item.name || _this2.props.language.embed));
+            break;
+          default:
+            previewerComponents = /*#__PURE__*/external_react_default().createElement("a", {
+              className: "bf-icon bf-file",
+              title: item.url,
+              href: item.url
+            }, progressMarker, /*#__PURE__*/external_react_default().createElement("i", {
+              className: "braft-icon-file-text"
+            }), /*#__PURE__*/external_react_default().createElement("span", null, item.name || item.url));
+            break;
+        }
+        var className = ['bf-item'];
+        item.selected && className.push('active');
+        item.uploading && className.push('uploading');
+        item.error && className.push('error');
+        return /*#__PURE__*/external_react_default().createElement("li", {
+          key: index,
+          title: item.name,
+          "data-id": item.id,
+          className: className.join(' '),
+          onClick: _this2.toggleSelectItem
+        }, previewerComponents, /*#__PURE__*/external_react_default().createElement("span", {
+          "data-id": item.id,
+          onClick: _this2.removeItem,
+          className: "bf-item-remove braft-icon-close"
+        }), /*#__PURE__*/external_react_default().createElement("span", {
+          className: "bf-item-title"
+        }, item.name));
+      }));
+    }
+  }], [{
+    key: "getDerivedStateFromProps",
+    value: function getDerivedStateFromProps(nextProps, prevState) {
+      if (JSON.stringify(nextProps) !== prevState.propsStr) return mapPropsToState(nextProps);
+      return null;
+    }
+  }]);
+  return BraftFinderView;
+}((external_react_default()).Component);
+view_defineProperty(BraftFinderView, "defaultProps", {
+  accepts: defaultAccepts,
+  externals: {
+    image: true,
+    video: true,
+    audio: true,
+    embed: true
+  }
+});
 
-  return BraftFinder;
-}(_controller2.default);
+;// CONCATENATED MODULE: ./languages/en.js
+/* harmony default export */ const en = ({
+  remove: 'Remove',
+  cancel: 'Cancel',
+  confirm: 'Confirm',
+  insert: 'Insert Selected Items',
+  width: 'Width',
+  height: 'Height',
+  image: 'Image',
+  video: 'Video',
+  audio: 'Audio',
+  embed: 'Embed',
+  caption: 'Media Library',
+  dragTip: 'Click Or Drag Files Here',
+  dropTip: 'Drop To Upload',
+  selectAll: 'Select All',
+  deselect: 'Deselect',
+  removeSelected: 'Remove Selected Items',
+  externalInputPlaceHolder: 'Source Name|Source URL',
+  externalInputTip: 'Split source name and source URL with "|", confirm by hit Enter.',
+  addLocalFile: 'Add from local',
+  addExternalSource: 'Add from Internet',
+  unnamedItem: 'Unnamed Item',
+  confirmInsert: 'Insert selected items'
+});
+;// CONCATENATED MODULE: ./languages/zh.js
+/* harmony default export */ const zh = ({
+  remove: '删除',
+  cancel: '取消',
+  confirm: '确认',
+  insert: '插入所选项目',
+  width: '宽度',
+  height: '高度',
+  image: '图片',
+  video: '视频',
+  audio: '音频',
+  embed: '嵌入式媒体',
+  caption: '媒体库',
+  dragTip: '点击或拖动文件至此',
+  dropTip: '放开鼠标以上传',
+  selectAll: '选择全部',
+  deselect: '取消选择',
+  removeSelected: '删除选中项目',
+  externalInputPlaceHolder: '资源名称|资源地址',
+  externalInputTip: '使用“|”分隔资源名称和资源地址',
+  addLocalFile: '添加本地资源',
+  addExternalSource: '添加网络资源',
+  unnamedItem: '未命名项目',
+  confirmInsert: '插入选中项目'
+});
+;// CONCATENATED MODULE: ./languages/zh-hant.js
+/* harmony default export */ const zh_hant = ({
+  remove: '刪除',
+  cancel: '取消',
+  confirm: '確認',
+  insert: '插入所選項目',
+  width: '寬度',
+  height: '高度',
+  image: '圖片',
+  video: '視頻',
+  audio: '音頻',
+  embed: '嵌入式媒體',
+  caption: '媒體庫',
+  dragTip: '點擊或拖動文件至此',
+  dropTip: '放開鼠標以上傳',
+  selectAll: '選擇全部',
+  deselect: '取消選擇',
+  removeSelected: '刪除選中項目',
+  externalInputPlaceHolder: '資源名稱|資源地址',
+  externalInputTip: '使用“|”分隔資源名稱和資源地址',
+  addLocalFile: '添加本地資源',
+  addExternalSource: '添加網絡資源',
+  unnamedItem: '未命名項目',
+  confirmInsert: '插入選中項目'
+});
+;// CONCATENATED MODULE: ./languages/pl.js
+/* harmony default export */ const pl = ({
+  remove: 'Usuń',
+  cancel: 'Anuluj',
+  confirm: 'Potwierdź',
+  insert: 'Wstaw wybrane elementy',
+  width: 'Szerokość',
+  height: 'Wysokość',
+  image: 'Obraz',
+  video: 'Wideo',
+  audio: 'Dźwięk',
+  embed: 'Obiekt',
+  caption: 'Biblioteka mediów',
+  dragTip: 'Kliknij lub przenieś tu pliki',
+  dropTip: 'Upuść aby dodać plik',
+  selectAll: 'Zaznacz wszystko',
+  deselect: 'Odznacz',
+  removeSelected: 'Usuń wybrane',
+  externalInputPlaceHolder: 'Nazwa źródła|Adres URL',
+  externalInputTip: 'Oddziel nazwę i adres URL źródła z pomocą "|", Potwierdź Enter-em',
+  addLocalFile: 'Dodaj z komputera',
+  addExternalSource: 'Dodaj z Internetu',
+  unnamedItem: 'Bez nazwy',
+  confirmInsert: 'Dodaj wybrane elementy'
+});
+;// CONCATENATED MODULE: ./languages/kr.js
+/* harmony default export */ const kr = ({
+  remove: '삭제',
+  cancel: '취소',
+  confirm: '확인',
+  insert: '선택한항목삽입',
+  width: '너비',
+  height: '높이',
+  image: '그림',
+  video: '비디오',
+  audio: '오디오',
+  embed: '임베디드미디어',
+  caption: '미디어라이브러리',
+  dragTip: '파일을 클릭하거나이 지점으로 드래그하십시오.',
+  dropTip: '업로드하려면마우스를놓으십시오.',
+  selectAll: '모두 선택',
+  deselect: '선택 취소',
+  removeSelected: '선택한 항목 삭제',
+  externalInputPlaceHolder: '리소스 이름 | 리소스 주소',
+  externalInputTip: '자원 이름과 자원 주소를 "|"',
+  addLocalFile: '로컬 리소스 추가',
+  addExternalSource: '네트워크 리소스 추가',
+  unnamedItem: '이름없는 항목',
+  confirmInsert: '선택한 항목 삽입'
+});
+;// CONCATENATED MODULE: ./languages/jpn.js
+/* harmony default export */ const jpn = ({
+  remove: '削除する',
+  cancel: 'キャンセル',
+  confirm: '確認する',
+  insert: '選択したアイテムを挿入',
+  width: '幅',
+  height: '身長',
+  image: '絵',
+  video: 'ビデオ',
+  audio: '音声',
+  embed: '埋め込みメディア',
+  caption: 'メディアライブラリー',
+  dragTip: 'ファイルをこの位置までクリックまたはドラッグします',
+  dropTip: 'アップロードするマウスを放します',
+  selectAll: 'すべて選択',
+  deselect: '選択を解除',
+  removeSelected: '選択したアイテムを削除',
+  externalInputPlaceHolder: 'リソース名|リソースアドレス',
+  externalInputTip: 'リソース名とリソースアドレスは "|"で区切ります。',
+  addLocalFile: 'ローカルリソースを追加する',
+  addExternalSource: 'ネットワークリソースを追加する',
+  unnamedItem: '名前のないアイテム',
+  confirmInsert: '選択したアイテムを挿入'
+});
+;// CONCATENATED MODULE: ./languages/tr.js
+/* harmony default export */ const tr = ({
+  remove: 'Kaldır',
+  cancel: 'İptal',
+  confirm: 'Onayla',
+  insert: 'Seçilenleri ekle',
+  width: 'Genişlik',
+  height: 'Yükseklik',
+  image: 'Resim',
+  video: 'Görüntü',
+  audio: 'Ses',
+  embed: 'Nesne göm',
+  caption: 'Kitaplık',
+  dragTip: 'Tıkla ya da dosya sürükle',
+  dropTip: 'Yüklemek için sürükleyin',
+  selectAll: 'Tümünü seç',
+  deselect: 'Seçimi kaldır',
+  removeSelected: 'Seçilenleri kaldır',
+  externalInputPlaceHolder: 'Kaynak adı|Kaynak bağlantısı',
+  externalInputTip: 'Kaynak asını ve bağlantısını "|" ile ayırın ve Enter\' a basın.',
+  addLocalFile: 'Yerel\' den ekle',
+  addExternalSource: 'Harici kaynaktan ekle',
+  unnamedItem: 'Adlandırılmamış giriş',
+  confirmInsert: 'Seçilenleri ekle'
+});
+;// CONCATENATED MODULE: ./languages/ru.js
+/* harmony default export */ const ru = ({
+  remove: 'Удалить',
+  cancel: 'Отмена',
+  confirm: 'Подтвердить',
+  insert: 'Вставить выбранные элементы',
+  width: 'Ширина',
+  height: 'Высота',
+  image: 'Изображение',
+  video: 'Видео',
+  audio: 'Аудио',
+  embed: 'Встроенное',
+  caption: 'Медиа библиотека',
+  dragTip: 'Нажмите или перетащите файлы сюда',
+  dropTip: 'Перетащите, чтобы загрузить',
+  selectAll: 'Выбрать все',
+  deselect: 'Отменить выбор',
+  removeSelected: 'Удалить выбранные элементы',
+  externalInputPlaceHolder: 'Имя источника |URL источника',
+  externalInputTip: 'Разделите имя источника и URL источника с помощью «|», подтвердите нажатием Enter.',
+  addLocalFile: 'Добавить с локального диска',
+  addExternalSource: 'Добавить через интернет',
+  unnamedItem: 'Беззымянный элемент',
+  confirmInsert: 'Вставить выбранные элементы'
+});
+;// CONCATENATED MODULE: ./languages/index.js
 
-var _initialiseProps = function _initialiseProps() {
-  var _this2 = this;
-
-  this.ReactComponent = function () {
-    var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
 
 
-    var componentProps = _extends({}, _this2.superProps, props);
 
-    var language = (typeof componentProps.language === 'function' ? componentProps.language(_languages2.default, 'braft-finder') : _languages2.default[componentProps.language]) || _languages2.default['zh'];
 
-    return _react2.default.createElement(_view2.default, _extends({}, componentProps, {
-      language: language,
-      controller: _this2
-    }));
-  };
-};
 
-exports.default = BraftFinder;
-exports.ImageUtils = ImageUtils;
 
-/***/ })
-/******/ ]);
+
+/* harmony default export */ const languages = ({
+  "en": en,
+  "zh": zh,
+  "zh-hant": zh_hant,
+  "pl": pl,
+  "kr": kr,
+  "jpn": jpn,
+  "tr": tr,
+  "ru": ru
+});
+;// CONCATENATED MODULE: ./index.jsx
+function index_typeof(obj) { "@babel/helpers - typeof"; return index_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, index_typeof(obj); }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function index_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function index_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? index_ownKeys(Object(source), !0).forEach(function (key) { index_defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : index_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+function index_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, index_toPropertyKey(descriptor.key), descriptor); } }
+function index_createClass(Constructor, protoProps, staticProps) { if (protoProps) index_defineProperties(Constructor.prototype, protoProps); if (staticProps) index_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function index_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function index_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) index_setPrototypeOf(subClass, superClass); }
+function index_setPrototypeOf(o, p) { index_setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return index_setPrototypeOf(o, p); }
+function index_createSuper(Derived) { var hasNativeReflectConstruct = index_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = index_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = index_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return index_possibleConstructorReturn(this, result); }; }
+function index_possibleConstructorReturn(self, call) { if (call && (index_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return index_assertThisInitialized(self); }
+function index_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+function index_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+function index_getPrototypeOf(o) { index_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return index_getPrototypeOf(o); }
+function index_defineProperty(obj, key, value) { key = index_toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function index_toPropertyKey(arg) { var key = index_toPrimitive(arg, "string"); return index_typeof(key) === "symbol" ? key : String(key); }
+function index_toPrimitive(input, hint) { if (index_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (index_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+
+
+
+
+
+var BraftFinder = /*#__PURE__*/function (_FinderController) {
+  index_inherits(BraftFinder, _FinderController);
+  var _super = index_createSuper(BraftFinder);
+  function BraftFinder(_props) {
+    var _this;
+    index_classCallCheck(this, BraftFinder);
+    _this = _super.call(this, _props);
+    index_defineProperty(index_assertThisInitialized(_this), "ReactComponent", function () {
+      var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var componentProps = index_objectSpread(index_objectSpread({}, _this.superProps), props);
+      var language = (typeof componentProps.language === 'function' ? componentProps.language(languages, 'braft-finder') : languages[componentProps.language]) || languages['zh'];
+      return /*#__PURE__*/external_react_default().createElement(BraftFinderView, _extends({}, componentProps, {
+        language: language,
+        controller: index_assertThisInitialized(_this)
+      }));
+    });
+    _this.superProps = _props;
+    return _this;
+  }
+  return index_createClass(BraftFinder);
+}(BraftFinderController);
+
+
+})();
+
+/******/ 	return __webpack_exports__;
+/******/ })()
+;
 });
